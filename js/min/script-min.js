@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){var n=$(".menu-icon"),o=$(".menu-navigation-wrapper");n.click(function(){o.toggleClass("show-mobile-nav")})});

@@ -1,9 +1,16 @@
 // import font
 @font-face {
-  font-family: 'martin gothic';
+  font-family: 'martin gothic medium';
   src: url('../fonts/martin-gothic-medium.eot');
   src: url('../fonts/martin-gothic-medium.eot?#iefix') format('embedded-opentype'), 
        url('../fonts/martin-gothic-medium.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'martin gothic light';
+  src: url('../fonts/martin-gothic-light.eot');
+  src: url('../fonts/martin-gothic-light.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/martin-gothic-light.woff') format('woff')
 }
 
 body {
@@ -17,7 +24,7 @@ body {
     color: #483D3D;
     margin:0px;
     padding:0px;
-    font-family: 'martin gothic';
+    font-family: 'martin gothic medium';
 
 }
 
@@ -40,3 +47,159 @@ body {
     -ms-user-select: none;
     user-select: none
 }
+
+// colors
+$blue-500: #00559D;
+$blue-400: #0086D4;
+$blue-300: #00A7F7;
+$blue-200: #7DD3FC;
+$blue-100: #B1E5FD;
+$blue-000: #E0F5FF;
+
+$franklin: 'franklin-gothic-urw', sans-serif;
+
+@media (min-width: 30em) {
+    .row { width: 100%; display: table; table-layout: fixed; }
+    .col { display: table-cell; }
+}
+
+.row-mobile-full { width: 100%; display: table; table-layout: fixed; padding: 0px; margin: 0px; }
+.col-2-mobile{
+  display: table-cell;
+  padding: 0;
+  margin: 0;
+}
+
+.reg-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-indent: 0;
+    li{
+      padding: 0;
+      margin: 0;
+      text-indent: 0;
+      a{
+        text-decoration: none;
+        color: $blue-500;
+      }
+    }
+}
+
+
+nav{
+  padding:10px 0px;
+  background: $blue-000;
+  color: $blue-500;
+  border-bottom: 1px solid $blue-400;
+  z-index: 500;
+  div.menu-header-wrapper{
+    display: block;
+  }
+
+  i{
+    font-size: 20px;
+    margin-left: 10px;
+    line-height: 0px;
+    position: relative;
+    top: 3px;
+  }
+
+  h1{
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: 3px;
+    font-family: 'martin gothic light';
+  }
+  h2.mobile-hidden{
+    display: none;
+  }
+}
+.menu-navigation-wrapper{
+  position: absolute;
+  top:-135px;
+  transition: 0.3s top;
+  z-index: -1;
+}
+
+.show-mobile-nav{
+  top: 45px;
+}
+// mobile nav row
+div.mobile-nav{
+  position: relative;
+  top: 0px;
+  ul.nav-list{
+  @extend .reg-list;
+  li{
+    a{
+      font-family: 'martin gothic light';
+      padding: 22px 0px 16px 0px;
+      padding-left: 40px;
+      line-height: 20px;
+      display: block;
+      background: $blue-000;
+      border-bottom: 1px solid $blue-200;
+      font-size: 20px;
+    }
+  }
+}
+}
+
+.mobile-nav-right{
+  background: $blue-500;
+  height: 100%;
+  position: relative;
+  h1{
+    font-size: 24px;
+    text-align: right;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'martin gothic light';
+    margin-bottom: 19px;
+    position: relative;
+    top: -1px;
+  }
+  ul.contact-info{
+    width: 100%;
+    text-align: right;
+    @extend .reg-list;
+    li{
+      padding-right: 10px;
+      margin-bottom: 6px;
+      a{
+        font-size: 16px;
+        font-family: $franklin;
+        font-weight: 100;
+        text-decoration: underline;
+        color: $blue-300;
+      }
+    }
+  }
+
+  div.social-media{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    ul{
+      @extend .reg-list;
+      width: 100%;
+      text-align: right;
+      padding-bottom: 4px;
+      li{
+        display: inline-block;
+        margin-right: 10px;
+        i{
+          font-size: 42px;
+          color: $blue-300;
+        }
+      }
+    }
+  }
+}
+
+
