@@ -30,6 +30,8 @@
   <script src="bower_components/velocity/velocity.min.js"></script>
   <script src="bower_components/paper/dist/paper-full.min.js"></script>
   <script src="bower_components/typed.js/dist/typed.min.js"></script>
+
+  <script type="text/paperscript" canvas="bg-image" src="js/paper.js"></script>
   <!--<script type="text/paperscript" canvas="canvas" src="js/min/paperWuj-min.js"></script>-->
 
   <!-- GSAP assets -->
@@ -41,7 +43,7 @@
 </head>
 
 <body>
-
+<canvas id="bg-image" resize></canvas>
   <div class="container"> <!-- This is the container div -->
     <nav>
       <div class="menu-header-wrapper">
@@ -74,7 +76,11 @@
           </div>
           </section>
         </div>
-      </div>
+      </div> <!-- end of menu-navigation-wrapper -->
+      <section class="row-mobile-full intro-section">
+      <div class="type-set col-2-mobile">
+      <h1>Matt Wujek is a digital designer who loves the waves and bike lanes in San Francisco &amp; grateful to live in a city that cares so much about design. Here to learn, share, and create.</h1>
+      </section>
 
   </div> <!-- End Container -->
 
