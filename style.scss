@@ -89,10 +89,10 @@ $franklin: 'franklin-gothic-urw', sans-serif;
 
 nav{
   padding:10px 0px;
-  background: $blue-000;
+  background: #fff;
   color: $blue-500;
   border-bottom: 1px solid $blue-400;
-  z-index: 500;
+  z-index: 9999999;
   div.menu-header-wrapper{
     display: block;
   }
@@ -109,7 +109,7 @@ nav{
     display: inline-block;
     margin: 0;
     margin-left: 10px;
-    letter-spacing: 0.5px;
+    //letter-spacing: 0.5px;
     position: relative;
     top: 3px;
     font-family: 'martin gothic light';
@@ -120,13 +120,14 @@ nav{
 }
 .menu-navigation-wrapper{
   position: absolute;
-  top:-135px;
-  transition: 0.3s top;
-  z-index: -1;
+  left: -100%;
+  width: 100%;
+  transition: 0.2s left;
+  z-index: 0;
 }
 
 .show-mobile-nav{
-  top: 45px;
+  left: 0px;
 }
 // mobile nav row
 div.mobile-nav{
@@ -157,7 +158,7 @@ div.mobile-nav{
     font-size: 24px;
     text-align: right;
     padding-right: 10px;
-    letter-spacing: 1px;
+    //letter-spacing: 1px;
     color: #fff;
     font-family: 'martin gothic light';
     margin-bottom: 19px;
@@ -210,7 +211,7 @@ div.mobile-nav{
   width: 100%;
   height: 80vh;
   background-size: cover;
-  z-index: -1;
+  z-index: -200;
 }
 // intro section
 .intro-section{
@@ -227,9 +228,50 @@ div.mobile-nav{
     line-height: 32px;
     color: #fff;
     font-family: 'martin gothic light';
-    letter-spacing: 0.5px;
+    //letter-spacing: 0.5px;
 
   }
 }
 
+h1.section-title{
+    font-size: 32px;
+    color: $blue-500;
+    text-align: center;
+    margin: 30px auto 20px auto;
+  }
+
+// work section
+.work-section{
+
+}
+// work image
+.work-item{
+  position: relative;
+  height: 120px;
+  .work-image{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: $blue-100;
+  }
+  .work-info{
+    position: absolute;
+    left: 130px;
+    top: 30px;
+    h1,h2{
+      margin: 0;
+      font-family: $franklin;
+      font-size: 22px;
+      color: $blue-500;
+    }
+    h1{
+    }
+    h2{
+      font-weight: 400;
+    }
+
+  }
+} // end of work item
 

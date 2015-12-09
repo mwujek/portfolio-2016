@@ -71,10 +71,10 @@ body {
 
 nav {
   padding: 10px 0px;
-  background: #E0F5FF;
+  background: #fff;
   color: #00559D;
   border-bottom: 1px solid #0086D4;
-  z-index: 500; }
+  z-index: 9999999; }
   nav div.menu-header-wrapper {
     display: block; }
   nav i {
@@ -87,7 +87,6 @@ nav {
     display: inline-block;
     margin: 0;
     margin-left: 10px;
-    letter-spacing: 0.5px;
     position: relative;
     top: 3px;
     font-family: 'martin gothic light'; }
@@ -96,12 +95,13 @@ nav {
 
 .menu-navigation-wrapper {
   position: absolute;
-  top: -135px;
-  transition: 0.3s top;
-  z-index: -1; }
+  left: -100%;
+  width: 100%;
+  transition: 0.2s left;
+  z-index: 0; }
 
 .show-mobile-nav {
-  top: 45px; }
+  left: 0px; }
 
 div.mobile-nav {
   position: relative;
@@ -124,7 +124,6 @@ div.mobile-nav {
     font-size: 24px;
     text-align: right;
     padding-right: 10px;
-    letter-spacing: 1px;
     color: #fff;
     font-family: 'martin gothic light';
     margin-bottom: 19px;
@@ -164,7 +163,7 @@ div.mobile-nav {
   width: 100%;
   height: 80vh;
   background-size: cover;
-  z-index: -1; }
+  z-index: -200; }
 
 .intro-section {
   height: 80vh; }
@@ -179,5 +178,32 @@ div.mobile-nav {
     font-size: 28px;
     line-height: 32px;
     color: #fff;
-    font-family: 'martin gothic light';
-    letter-spacing: 0.5px; }
+    font-family: 'martin gothic light'; }
+
+h1.section-title {
+  font-size: 32px;
+  color: #00559D;
+  text-align: center;
+  margin: 30px auto 20px auto; }
+
+.work-item {
+  position: relative;
+  height: 120px; }
+  .work-item .work-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: #B1E5FD; }
+  .work-item .work-info {
+    position: absolute;
+    left: 130px;
+    top: 30px; }
+    .work-item .work-info h1, .work-item .work-info h2 {
+      margin: 0;
+      font-family: "franklin-gothic-urw", sans-serif;
+      font-size: 22px;
+      color: #00559D; }
+    .work-item .work-info h2 {
+      font-weight: 400; }
