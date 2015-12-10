@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,7 @@
 
   <link rel="shortcut icon" href="_images/icon.ico" />
   <link href="bower_components/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="bower_components/flickity/dist/flickity.min.css" rel="stylesheet">
   
   <link href="css/style.css" rel="stylesheet">
 
@@ -27,11 +28,13 @@
   <script>try{Typekit.load();}catch(e){}</script>
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+
   <script src="bower_components/velocity/velocity.min.js"></script>
-  <script src="bower_components/paper/dist/paper-full.min.js"></script>
+  <!--<script src="bower_components/paper/dist/paper-full.min.js"></script>-->
   <script src="bower_components/typed.js/dist/typed.min.js"></script>
 
-  <script type="text/paperscript" canvas="bg-image" src="js/paper.js"></script>
+  <!--<script type="text/paperscript" canvas="bg-image" src="js/paper.js"></script>-->
   <!--<script type="text/paperscript" canvas="canvas" src="js/min/paperWuj-min.js"></script>-->
 
   <!-- GSAP assets -->
@@ -45,13 +48,13 @@
 <body>
 
   <div class="container"> <!-- This is the container div -->
-  <canvas id="bg-image" resize></canvas>
     <nav>
       <div class="menu-header-wrapper">
         <i class="icon ion-android-menu menu-icon"></i>
         <h1>Matt Wujek</h1>
         <h2 class="mobile-hidden">UX/UI Designer</h2>
         <h2 class="mobile-hidden">San Franisco</h2>
+        <span class="back-to-projects"><a href="index.html#work"><i class="icon ion-android-arrow-back"></i>Back to Projects</a></span>
       </div>
     </nav>
     <div class="menu-navigation-wrapper">
@@ -78,65 +81,20 @@
           </section>
         </div>
       </div> <!-- end of menu-navigation-wrapper -->
-      <section class="row-mobile-full intro-section">
-        <div class="type-set col-2-mobile">
-        <h1>Matt Wujek is a digital designer who loves the waves and bike lanes in San Francisco &amp; grateful to live in a city that cares so much about design. Here to learn, share, and create.</h1>
-        </div>
-      </section>
-      <h1 class="section-title" id="work">Work</h1>
-      <section class="row work-section">
-
-        <article class="work-item">
-          <div class="work-image"></div>
-          <div class="work-info">
-            <h1>Animated Type</h1>
-            <h2>Winter 2015</h2>
-          </div>
-        </article>
-
-        <article class="work-item">
-          <div class="work-image"></div>
-          <div class="work-info">
-            <h1>Gap Planning Tools</h1>
-            <h2>Summer/Fall 2015</h2>
-          </div>
-        </article>
-
-        <article class="work-item">
-          <div class="work-image"></div>
-          <div class="work-info">
-            <h1>Everlane</h1>
-            <h2>Spring 2015</h2>
-          </div>
-        </article>
-
-        <article class="work-item">
-          <div class="work-image"></div>
-          <div class="work-info">
-            <h1>Revolver Yoga</h1>
-            <h2>Winter 2014</h2>
-          </div>
-        </article>
-      </section>
-      <h1 class="section-title">Bio</h1>
-      <section class="row-mobile-full bio-section">
-        <div class="col-2-mobile"><h1>Just Call Me Wuj</h1></div>
-        <div class="profile-pic-wrapper">
-          <div class="profile-pic"></div>
-        </div>
-      </section>
-      <section class="bio-section-2">
-      <div class="col bio-statement">
+      <h1 class="work-title everlane-title">Everlane</h1>
+      <section class="row work-section hidden-section">
+      <div class="col work-content">
         <p>Hi! My name is Matt, but you can just call me Wuj. I currently work as a freelance designer in the Bay Area.  Designing interfaces without animation and interactivity is like showing up to the ballpark 30 minutes late without your cleats. I'm crazy about the outdoors, running, and the Giants. Thanks for stopping by!</p>
-        <div class="contact-btn-wrapper">
-        <ul>
-          <li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
-          <li><a href="#"><i class="icon ion-email"></i></a></li>
-          <li class="cv"><a href="#">CV</a></li>
-        </ul>
+
+        <div class="project-gallery">
+          <div class="gallery-cell"><img src="img/profile.png"></div>
+          <div class="gallery-cell"><img src="img/surf.png"></div>
+          <div class="gallery-cell"><img src="img/profile.png"></div>
         </div>
+
+
       </div>
-        
+
       </section>
 
   </div> <!-- End Container -->

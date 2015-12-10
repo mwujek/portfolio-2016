@@ -36,7 +36,7 @@ body {
   -ms-user-select: none;
   user-select: none; }
 
-@media (min-width: 30em) {
+@media (min-width: 700px) {
   .row {
     width: 100%;
     display: table;
@@ -56,16 +56,16 @@ body {
   padding: 0;
   margin: 0; }
 
-.reg-list, div.mobile-nav ul.nav-list, .mobile-nav-right ul.contact-info, .mobile-nav-right div.social-media ul {
+.reg-list, div.mobile-nav ul.nav-list, .mobile-nav-right ul.contact-info, .mobile-nav-right div.social-media ul, .contact-btn-wrapper ul {
   padding: 0;
   margin: 0;
   list-style: none;
   text-indent: 0; }
-  .reg-list li, div.mobile-nav ul.nav-list li, .mobile-nav-right ul.contact-info li, .mobile-nav-right div.social-media ul li {
+  .reg-list li, div.mobile-nav ul.nav-list li, .mobile-nav-right ul.contact-info li, .mobile-nav-right div.social-media ul li, .contact-btn-wrapper ul li {
     padding: 0;
     margin: 0;
     text-indent: 0; }
-    .reg-list li a, div.mobile-nav ul.nav-list li a, .mobile-nav-right ul.contact-info li a, .mobile-nav-right div.social-media ul li a {
+    .reg-list li a, div.mobile-nav ul.nav-list li a, .mobile-nav-right ul.contact-info li a, .mobile-nav-right div.social-media ul li a, .contact-btn-wrapper ul li a {
       text-decoration: none;
       color: #00559D; }
 
@@ -76,7 +76,8 @@ nav {
   border-bottom: 1px solid #0086D4;
   z-index: 9999999; }
   nav div.menu-header-wrapper {
-    display: block; }
+    display: block;
+    position: relative; }
   nav i {
     font-size: 20px;
     margin-left: 10px;
@@ -207,3 +208,118 @@ h1.section-title {
       color: #00559D; }
     .work-item .work-info h2 {
       font-weight: 400; }
+
+.bio-section {
+  background: url(../img/surf.png);
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  margin-bottom: 80px; }
+  .bio-section .col-2-mobile {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+    .bio-section .col-2-mobile h1 {
+      color: #fff;
+      letter-spacing: 1px;
+      text-align: center;
+      font-family: 'martin gothic light';
+      font-size: 28px; }
+
+.profile-pic-wrapper {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  left: 0px; }
+  .profile-pic-wrapper div.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: url(../img/profile.png);
+    background-size: cover;
+    margin: 0 auto; }
+
+.bio-section-2 p {
+  font-family: 'franklin-gothic-urw';
+  font-weight: 400;
+  color: #00559D;
+  padding: 0 10px; }
+
+.contact-btn-wrapper {
+  padding-top: 10px;
+  margin-bottom: 30px; }
+  .contact-btn-wrapper ul {
+    text-align: center; }
+    .contact-btn-wrapper ul li {
+      font-family: 'franklin-gothic-urw';
+      font-weight: 400;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      line-height: 50px;
+      background: #00559D;
+      margin: 0px 4px; }
+      .contact-btn-wrapper ul li a {
+        color: #fff;
+        font-size: 28px;
+        position: relative;
+        top: 1px; }
+      .contact-btn-wrapper ul li.cv {
+        font-size: 22px;
+        line-height: 50px;
+        position: relative;
+        top: -2px; }
+        .contact-btn-wrapper ul li.cv a {
+          font-size: 20px;
+          font-weight: 100;
+          letter-spacing: 1px;
+          top: 0px; }
+
+.back-to-projects {
+  background: #B1E5FD;
+  padding: 4px 10px 4px 1px;
+  border-radius: 4px;
+  position: absolute;
+  right: 10px;
+  top: 0px; }
+  .back-to-projects a {
+    text-decoration: none;
+    color: #0086D4;
+    position: relative;
+    top: 0px;
+    font-family: 'franklin-gothic-urw';
+    font-size: 15px;
+    font-weight: 400; }
+    .back-to-projects a:visited {
+      color: #0086D4; }
+    .back-to-projects a i {
+      margin-right: 6px;
+      position: relative;
+      top: 1px;
+      font-size: 15px; }
+
+.work-title {
+  font-size: 32px;
+  color: #00559D;
+  text-align: center;
+  margin: 30px auto 20px auto; }
+
+.work-section {
+  opacity: 1;
+  transition: 0.5s opacity; }
+
+.work-content p {
+  font-family: 'franklin-gothic-urw';
+  padding: 0 10px;
+  color: #00559D; }
+
+.hidden-section {
+  opacity: 0; }
+
+.project-gallery img {
+  height: 300px; }
+.project-gallery li.dot {
+  background: #7DD3FC; }

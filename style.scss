@@ -58,7 +58,9 @@ $blue-000: #E0F5FF;
 
 $franklin: 'franklin-gothic-urw', sans-serif;
 
-@media (min-width: 30em) {
+$first-break: 700px;
+
+@media (min-width: $first-break) {
     .row { width: 100%; display: table; table-layout: fixed; }
     .col { display: table-cell; }
 }
@@ -95,6 +97,7 @@ nav{
   z-index: 9999999;
   div.menu-header-wrapper{
     display: block;
+    position: relative;
   }
 
   i{
@@ -274,4 +277,168 @@ h1.section-title{
 
   }
 } // end of work item
+
+// bio section
+
+
+
+
+.bio-section{
+  background: url(../img/surf.png);
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  //vertical-align: middle;
+  position: relative;
+  margin-bottom: 80px;
+  .col-2-mobile{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+
+    h1{
+      color:#fff;
+      letter-spacing: 1px;
+      text-align: center;
+      font-family: 'martin gothic light';
+      font-size: 28px;
+    }
+  }
+}
+
+.profile-pic-wrapper{
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  left:0px;
+  div.profile-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: url(../img/profile.png);
+    background-size: cover;
+    margin: 0 auto;
+  }
+}
+
+// bio section 2
+.bio-section-2{
+  .bio-statement{
+  }
+  p{
+    font-family: 'franklin-gothic-urw';
+    font-weight: 400;
+    color: $blue-500;
+    padding: 0 10px;
+
+  }
+}
+
+// contact buttons
+.contact-btn-wrapper{
+  padding-top: 10px;
+  margin-bottom: 30px;
+  ul{
+    @extend .reg-list;
+    text-align: center;
+    li{
+      font-family: 'franklin-gothic-urw';
+      font-weight: 400;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      line-height: 50px;
+      //border: 1px solid $blue-400;
+      background: $blue-500;
+      margin: 0px 4px;
+      a{
+        color:#fff;
+        font-size: 28px;
+        position: relative;
+        top:1px;
+      }
+      &.cv{
+        font-size: 22px;
+        line-height: 50px;
+        position: relative;
+        top:-2px;
+        a{
+          font-size: 20px;
+          font-weight: 100;
+          letter-spacing: 1px;
+          top:0px;
+        }
+      }
+
+    }
+  }
+}
+
+// project page (seperate HTML file)
+
+.back-to-projects{
+  //border:1px solid $blue-200;
+  background: $blue-100;
+  padding: 4px 10px 4px 1px;
+  border-radius: 4px;
+  position: absolute;
+  right: 10px;
+  top:0px;
+  a{
+    text-decoration: none;
+    color: $blue-400;
+    position: relative;
+    top:0px;
+    font-family: 'franklin-gothic-urw';
+    font-size: 15px;
+    font-weight: 400;
+    &:visited{
+      color: $blue-400;
+    }
+    i{
+      margin-right: 6px;
+      position: relative;
+      top: 1px;
+      font-size: 15px;
+    }
+  }
+}
+
+.work-title{
+    font-size: 32px;
+    color: $blue-500;
+    text-align: center;
+    margin: 30px auto 20px auto;
+}
+
+.work-section{opacity: 1; transition: 0.5s opacity; }
+.work-content{
+  p{
+    font-family: 'franklin-gothic-urw';
+    padding: 0 10px;
+    color: $blue-500;
+  }
+}
+
+.hidden-section{
+  opacity: 0;
+}
+.project-gallery{
+  img{
+    height: 300px;
+  }
+  li.dot{
+    background: $blue-200;
+  }
+}
+// first point break
+@media (min-width: $first-break) {
+    
+}
+
+
+
+
 
