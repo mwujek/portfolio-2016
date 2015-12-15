@@ -67,12 +67,20 @@ body {
     text-indent: 0; }
     .reg-list li a, div.mobile-nav ul.nav-list li a, .mobile-nav-right ul.contact-info li a, .mobile-nav-right div.social-media ul li a, .contact-btn-wrapper ul li a {
       text-decoration: none;
-      color: #00559D; }
+      color: #333; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
+.desktop-nav {
+  display: none; }
 
 nav {
   padding: 10px 0px;
   background: #fff;
-  color: #00559D;
+  color: #333;
   border-bottom: 1px solid #0086D4;
   z-index: 9999999; }
   nav div.menu-header-wrapper {
@@ -118,7 +126,7 @@ div.mobile-nav {
     font-size: 20px; }
 
 .mobile-nav-right {
-  background: #00559D;
+  background: #333;
   height: 100%;
   position: relative; }
   .mobile-nav-right h1 {
@@ -158,32 +166,30 @@ div.mobile-nav {
           color: #00A7F7; }
 
 #bg-image {
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 80vh;
-  background-size: cover;
-  z-index: -200; }
+  background-size: cover; }
 
 .intro-section {
   height: 80vh; }
 
 .type-set {
   vertical-align: middle;
-  height: 80vh;
-  background: rgba(0, 134, 212, 0.8); }
+  height: 80vh; }
   .type-set h1 {
     margin: 0;
     padding: 10px;
     font-size: 28px;
     line-height: 32px;
-    color: #fff;
+    color: #333;
     font-family: 'martin gothic light'; }
 
 h1.section-title {
   font-size: 32px;
-  color: #00559D;
+  color: #333;
   text-align: center;
   margin: 30px auto 20px auto; }
 
@@ -205,7 +211,7 @@ h1.section-title {
       margin: 0;
       font-family: "franklin-gothic-urw", sans-serif;
       font-size: 22px;
-      color: #00559D; }
+      color: #333; }
     .work-item .work-info h2 {
       font-weight: 400; }
 
@@ -244,7 +250,7 @@ h1.section-title {
 .bio-section-2 p {
   font-family: 'franklin-gothic-urw';
   font-weight: 400;
-  color: #00559D;
+  color: #333;
   padding: 0 10px; }
 
 .contact-btn-wrapper {
@@ -260,7 +266,7 @@ h1.section-title {
       height: 50px;
       border-radius: 50px;
       line-height: 50px;
-      background: #00559D;
+      background: #333;
       margin: 0px 4px; }
       .contact-btn-wrapper ul li a {
         color: #fff;
@@ -303,7 +309,7 @@ h1.section-title {
 
 .work-title {
   font-size: 32px;
-  color: #00559D;
+  color: #333;
   text-align: center;
   margin: 30px auto 20px auto; }
 
@@ -314,7 +320,7 @@ h1.section-title {
 .work-content p {
   font-family: 'franklin-gothic-urw';
   padding: 0 10px;
-  color: #00559D; }
+  color: #333; }
 
 .hidden-section {
   opacity: 0; }
@@ -323,3 +329,109 @@ h1.section-title {
   height: 300px; }
 .project-gallery li.dot {
   background: #7DD3FC; }
+
+@media (min-width: 700px) {
+  div.mobile-nav, nav {
+    display: none; }
+
+  .desktop-nav {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    top: 20px;
+    left: 20px; }
+    .desktop-nav h1 {
+      margin: 0;
+      line-height: 16px;
+      margin-bottom: 10px;
+      font-size: 22px; }
+    .desktop-nav h2 {
+      display: block;
+      font-family: 'franklin-gothic-urw';
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 300;
+      margin: 0;
+      margin-top: 2px; }
+    .desktop-nav ul.nav-list-desktop {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-indent: 0;
+      margin-top: 30px;
+      font-family: 'franklin-gothic-urw'; }
+      .desktop-nav ul.nav-list-desktop li {
+        padding: 0;
+        margin: 0;
+        text-indent: 0;
+        font-size: 16px;
+        font-weight: 300; }
+        .desktop-nav ul.nav-list-desktop li a {
+          text-decoration: underline;
+          color: #333; }
+          .desktop-nav ul.nav-list-desktop li a:active {
+            color: #333; }
+
+  nav {
+    background: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: none;
+    padding: 0; }
+
+  .menu-header-wrapper .menu-icon {
+    display: none; }
+
+  .type-set {
+    background: none;
+    height: auto;
+    z-index: 9999; }
+
+  .canvas-container {
+    position: relative;
+    height: 80vh; }
+    .canvas-container h1 {
+      position: relative;
+      top: -600px;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 46px;
+      line-height: 52px;
+      color: #000; }
+
+  h1.section-title {
+    font-size: 48px; }
+
+  .bio-section .col-2-mobile h1 {
+    font-size: 48px; }
+
+  .work-section {
+    text-align: center; }
+
+  .work-item {
+    position: relative;
+    width: 40%;
+    height: 300px;
+    display: inline-block;
+    margin: 20px; }
+    .work-item .work-image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: #B1E5FD; }
+    .work-item .work-info {
+      position: absolute;
+      top: auto;
+      right: 16px;
+      bottom: 10px; }
+      .work-item .work-info h1, .work-item .work-info h2 {
+        margin: 0;
+        text-align: right;
+        font-family: "franklin-gothic-urw", sans-serif;
+        font-size: 22px;
+        color: #333; }
+      .work-item .work-info h2 {
+        font-weight: 400; } }

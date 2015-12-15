@@ -29,7 +29,9 @@
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="bower_components/velocity/velocity.min.js"></script>
   <script src="bower_components/paper/dist/paper-full.min.js"></script>
-  <script src="bower_components/typed.js/dist/typed.min.js"></script>
+  <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src=""></script>
+  <!--<script src="bower_components/typed.js/dist/typed.min.js"></script>-->
 
   <script type="text/paperscript" canvas="bg-image" src="js/paper.js"></script>
   <!--<script type="text/paperscript" canvas="canvas" src="js/min/paperWuj-min.js"></script>-->
@@ -43,15 +45,29 @@
 </head>
 
 <body>
-
+<div class="container-wrapper">
+<section class="desktop-nav">
+  <h1>Matt Wujek</h1>
+  <h2>Product Designer</h2>
+  <h2>San Francisco, CA</h2>
+  <div class="svg-container">
+    <i class="ion ion-home"></i>
+  </div>
+  <ul class="nav-list-desktop">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Work</a></li>
+    <li><a href="#">Bio</a></li>
+  </ul>
+</section>
   <div class="container"> <!-- This is the container div -->
+  <section class="canvas-container">
   <canvas id="bg-image" resize></canvas>
+  <h1>Matt Wujek is a digital designer who loves the waves &amp; bike lanes in San Francisco. Blah blah, smoke pots.<br> Here to learn, share, and create.</h1>
+  </section>
     <nav>
       <div class="menu-header-wrapper">
         <i class="icon ion-android-menu menu-icon"></i>
         <h1>Matt Wujek</h1>
-        <h2 class="mobile-hidden">UX/UI Designer</h2>
-        <h2 class="mobile-hidden">San Franisco</h2>
       </div>
     </nav>
     <div class="menu-navigation-wrapper">
@@ -78,11 +94,7 @@
           </section>
         </div>
       </div> <!-- end of menu-navigation-wrapper -->
-      <section class="row-mobile-full intro-section">
-        <div class="type-set col-2-mobile">
-        <h1>Matt Wujek is a digital designer who loves the waves and bike lanes in San Francisco &amp; grateful to live in a city that cares so much about design. Here to learn, share, and create.</h1>
-        </div>
-      </section>
+      
       <h1 class="section-title" id="work">Work</h1>
       <section class="row work-section">
 
@@ -140,6 +152,7 @@
       </section>
 
   </div> <!-- End Container -->
+</div> <!-- end of container wrapper -->
 
 
   <script type="text/javascript" src="js/script.js"></script>

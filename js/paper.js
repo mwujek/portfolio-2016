@@ -9,7 +9,7 @@ var lineSpeed = 80; // higher = faster
 var minRadius = 3;
 var radiusRange = 6;
 var maxRadius = radiusRange - minRadius;
-
+var pathStrokeWeight = 25;
 
 
 
@@ -27,15 +27,16 @@ for (var i=0; i< count; i++){
 var lineLayer = new Layer();
 for (var i= 0; i< count; i++){
   var path = new Path({
-    strokeWidth: 1,
+    strokeWidth: pathStrokeWeight,
     strokeCap: 'round',
     segments: [startingPoint[i], lineLocation[i]],
-    strokeColor: { hue: (i*50/count), saturation: 0.7, lightness: 0 },
+    strokeColor: { hue: (i*160/count), saturation: 0.7, lightness: 0 },
     closed: false,
-    opacity: 0.7,
+    opacity: 0.9
     //blendMode: 'multiply'
   });
-  //path.dashArray = [3, 3];
+  //path.dashArray = [30, 30];
+  path.blendMode = 'multiply'
   path.data = {startLooking: true, looking: false, found: false, newLocation: null };
  } // end of for loop
  
@@ -122,6 +123,7 @@ function onFrame(event) {
       sR = (sR + diff) * threshold;
       item.radius = Math.abs(sR - (percentage * diff));
     }
+    
     // reset position
     
     if (percentage > threshold) {
@@ -164,3 +166,23 @@ function onFrame(event) {
     lineItem.strokeColor.hue +=0.5;
   } // end of loop for circles only
 } // end of frame animation function
+function onMouseDown(event){
+    console.log(event.point.x)
+    console.log(event.point.y)
+    console.log(event.point)
+      for (var i = 0; i < count; i++) {
+    // define items
+    var item = circleLayer.children[i];
+    var lineItem = lineLayer.children[i];
+
+    // new random point
+    var findNew = event.point;
+    lineItem.data.newLocation = findNew;
+
+    // set data properties
+    lineItem.data.startLooking = false;
+    lineItem.data.looking = true;
+     }
+}
+
+// text

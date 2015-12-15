@@ -3,34 +3,34 @@
   font-family: 'martin gothic medium';
   src: url('../fonts/martin-gothic-medium.eot');
   src: url('../fonts/martin-gothic-medium.eot?#iefix') format('embedded-opentype'), 
-       url('../fonts/martin-gothic-medium.woff') format('woff')
+  url('../fonts/martin-gothic-medium.woff') format('woff')
 }
 
 @font-face {
   font-family: 'martin gothic light';
   src: url('../fonts/martin-gothic-light.eot');
   src: url('../fonts/martin-gothic-light.eot?#iefix') format('embedded-opentype'), 
-       url('../fonts/martin-gothic-light.woff') format('woff')
+  url('../fonts/martin-gothic-light.woff') format('woff')
 }
 
 body {
-    font-family: "franklin-gothic-urw", sans-serif;
-    font-weight: 400;
-    -moz-font-feature-settings: "lnum";
-    -ms-font-feature-settings: "lnum";
-    -o-font-feature-settings: "lnum";
-    -webkit-font-feature-settings: "lnum";
-    font-feature-settings: "lnum";
-    color: #483D3D;
-    margin:0px;
-    padding:0px;
-    font-family: 'martin gothic medium';
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 400;
+  -moz-font-feature-settings: "lnum";
+  -ms-font-feature-settings: "lnum";
+  -o-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+  color: #483D3D;
+  margin:0px;
+  padding:0px;
+  font-family: 'martin gothic medium';
 
 }
 
 body,
 html {
-    height: 100%
+  height: 100%
 }
 
 body {
@@ -46,10 +46,11 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none
-}
+  }
 
 // colors
-$blue-500: #00559D;
+//$blue-500: #00559D;
+$blue-500: #333;
 $blue-400: #0086D4;
 $blue-300: #00A7F7;
 $blue-200: #7DD3FC;
@@ -61,8 +62,8 @@ $franklin: 'franklin-gothic-urw', sans-serif;
 $first-break: 700px;
 
 @media (min-width: $first-break) {
-    .row { width: 100%; display: table; table-layout: fixed; }
-    .col { display: table-cell; }
+  .row { width: 100%; display: table; table-layout: fixed; }
+  .col { display: table-cell; }
 }
 
 .row-mobile-full { width: 100%; display: table; table-layout: fixed; padding: 0px; margin: 0px; }
@@ -72,23 +73,31 @@ $first-break: 700px;
   margin: 0;
 }
 
+
+
 .reg-list{
   padding: 0;
   margin: 0;
   list-style: none;
   text-indent: 0;
-    li{
-      padding: 0;
-      margin: 0;
-      text-indent: 0;
-      a{
-        text-decoration: none;
-        color: $blue-500;
-      }
+  li{
+    padding: 0;
+    margin: 0;
+    text-indent: 0;
+    a{
+      text-decoration: none;
+      color: $blue-500;
     }
+  }
 }
 
 
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.desktop-nav{ display: none; }
 nav{
   padding:10px 0px;
   background: #fff;
@@ -121,6 +130,8 @@ nav{
     display: none;
   }
 }
+
+
 .menu-navigation-wrapper{
   position: absolute;
   left: -100%;
@@ -137,20 +148,20 @@ div.mobile-nav{
   position: relative;
   top: 0px;
   ul.nav-list{
-  @extend .reg-list;
-  li{
-    a{
-      font-family: 'martin gothic light';
-      padding: 22px 0px 16px 0px;
-      padding-left: 40px;
-      line-height: 20px;
-      display: block;
-      background: $blue-000;
-      border-bottom: 1px solid $blue-200;
-      font-size: 20px;
+    @extend .reg-list;
+    li{
+      a{
+        font-family: 'martin gothic light';
+        padding: 22px 0px 16px 0px;
+        padding-left: 40px;
+        line-height: 20px;
+        display: block;
+        background: $blue-000;
+        border-bottom: 1px solid $blue-200;
+        font-size: 20px;
+      }
     }
   }
-}
 }
 
 .mobile-nav-right{
@@ -208,13 +219,13 @@ div.mobile-nav{
 
 // bg paper
 #bg-image{
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 80vh;
   background-size: cover;
-  z-index: -200;
+  //z-index: 0;
 }
 // intro section
 .intro-section{
@@ -223,13 +234,13 @@ div.mobile-nav{
 .type-set{
   vertical-align: middle;
   height: 80vh;
-  background: rgba(0,134,212,0.8);
+  //background: rgba(0,134,212,0.8);
   h1{
     margin: 0;
     padding: 10px;
     font-size: 28px;
     line-height: 32px;
-    color: #fff;
+    color: #333;
     font-family: 'martin gothic light';
     //letter-spacing: 0.5px;
 
@@ -237,11 +248,11 @@ div.mobile-nav{
 }
 
 h1.section-title{
-    font-size: 32px;
-    color: $blue-500;
-    text-align: center;
-    margin: 30px auto 20px auto;
-  }
+  font-size: 32px;
+  color: $blue-500;
+  text-align: center;
+  margin: 30px auto 20px auto;
+}
 
 // work section
 .work-section{
@@ -407,10 +418,10 @@ h1.section-title{
 }
 
 .work-title{
-    font-size: 32px;
-    color: $blue-500;
-    text-align: center;
-    margin: 30px auto 20px auto;
+  font-size: 32px;
+  color: $blue-500;
+  text-align: center;
+  margin: 30px auto 20px auto;
 }
 
 .work-section{opacity: 1; transition: 0.5s opacity; }
@@ -435,7 +446,141 @@ h1.section-title{
 }
 // first point break
 @media (min-width: $first-break) {
-    
+  div.mobile-nav, nav{display: none;}
+  .desktop-nav{
+    display: block;
+    position: fixed;
+    z-index: 999;
+    top:20px;
+    left:20px;
+    h1{
+      margin: 0;
+      line-height: 16px;
+      margin-bottom: 10px;
+      font-size: 22px;
+
+    }
+    h2{
+      display: block;
+      font-family: 'franklin-gothic-urw';
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 300;
+      margin: 0;
+      margin-top: 2px;
+    }
+    ul.nav-list-desktop{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-indent: 0;
+      margin-top: 30px;
+      font-family: 'franklin-gothic-urw';
+      li{
+        padding: 0;
+        margin: 0;
+        text-indent: 0;
+        font-size: 16px;
+        font-weight: 300;
+        a{
+          text-decoration: underline;
+          color:#333;
+          &:active{
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+  nav{
+    background: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: none;
+    padding: 0;
+
+  }
+  .menu-header-wrapper{
+    .menu-icon{
+      display: none;
+    }
+  }
+
+  .type-set{
+    background: none;
+    height: auto;
+    z-index: 9999;
+    h1{
+      
+      
+    }
+  }
+.canvas-container{
+  position: relative;
+  height: 80vh;
+  h1{
+    position: relative;
+    top:-600px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 46px;
+    line-height: 52px;
+    color: #000;
+  }
+}
+h1.section-title{
+  font-size: 48px;
+}
+.bio-section{
+    .col-2-mobile{
+      h1{font-size: 48px;}
+    }
+  }
+
+
+// work section
+.work-section{
+  text-align: center;
+}
+.work-item{
+  position: relative;
+  width: 40%;
+  height: 300px;
+  display: inline-block;
+  margin: 20px;
+  .work-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: $blue-100;
+  }
+  .work-info{
+    position: absolute;
+    top: auto;
+    right: 16px;
+    bottom: 10px;
+    h1,h2{
+      margin: 0;
+      text-align: right;
+      font-family: $franklin;
+      font-size: 22px;
+      color: $blue-500;
+
+    }
+    h1{
+    }
+    h2{
+      font-weight: 400;
+    }
+
+  }
+} // end of work item
+
+
+
 }
 
 
