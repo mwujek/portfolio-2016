@@ -93,7 +93,7 @@ $first-break: 700px;
 
 
 .container{
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -223,8 +223,9 @@ div.mobile-nav{
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
+  cursor: crosshair;
   //z-index: 0;
 }
 // intro section
@@ -518,14 +519,14 @@ h1.section-title{
   }
 .canvas-container{
   position: relative;
-  height: 80vh;
+  height: 98vh;
   h1{
     position: relative;
-    top:-600px;
-    max-width: 600px;
+    top:-55vh;
+    max-width: 66%;
     margin: 0 auto;
-    font-size: 46px;
-    line-height: 52px;
+    font-size: 60px;
+    line-height: 66px;
     color: #000;
   }
 }
@@ -534,14 +535,22 @@ h1.section-title{
 }
 .bio-section{
     .col-2-mobile{
-      h1{font-size: 48px;}
+      h1{font-size: 60px;}
     }
   }
 
 
 // work section
+#work{
+  height: 0px;
+  margin: 0px;
+  position: relative;
+  top: -70px;
+}
 .work-section{
   text-align: center;
+  background: #eee;
+  padding: 40px 0px;
 }
 .work-item{
   position: relative;
@@ -555,7 +564,7 @@ h1.section-title{
     position: absolute;
     left: 0px;
     top: 0px;
-    background: $blue-100;
+    background: #ccc;
   }
   .work-info{
     position: absolute;
@@ -566,7 +575,7 @@ h1.section-title{
       margin: 0;
       text-align: right;
       font-family: $franklin;
-      font-size: 22px;
+      font-size: 24px;
       color: $blue-500;
 
     }
@@ -579,7 +588,34 @@ h1.section-title{
   }
 } // end of work item
 
+// bio section
+.bio-section{
+  background-position: 0 -140px;
+  height: 80vh; 
+  .profile-pic{
+    background: $blue-400 !important;
+  }
+}
+.bio-section-2{
+  .bio-statement{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  p{
+    font-family: 'franklin-gothic-urw';
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 32px;
+    color: $blue-500;
+    padding: 0 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 
+
+  }
+}
+}
 
 }
 

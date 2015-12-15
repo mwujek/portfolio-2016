@@ -1,15 +1,15 @@
-var count =12;
+var count =14;
 var threshold = 0.99; // distance to target
 var dots = [];
 var locations = [];
 var lineLocation = [];
 var startingPoint = [];
-var circleSpeed = 10; // higher = faster
+var circleSpeed = 20; // higher = faster
 var lineSpeed = 80; // higher = faster
 var minRadius = 3;
 var radiusRange = 6;
 var maxRadius = radiusRange - minRadius;
-var pathStrokeWeight = 25;
+var pathStrokeWeight = 60;
 
 
 
@@ -30,9 +30,9 @@ for (var i= 0; i< count; i++){
     strokeWidth: pathStrokeWeight,
     strokeCap: 'round',
     segments: [startingPoint[i], lineLocation[i]],
-    strokeColor: { hue: (i*160/count), saturation: 0.7, lightness: 0 },
+    strokeColor: { hue: (i*120/count), saturation: 0.7, lightness: 0 },
     closed: false,
-    opacity: 0.9
+    opacity: 1
     //blendMode: 'multiply'
   });
   //path.dashArray = [30, 30];

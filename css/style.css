@@ -70,7 +70,7 @@ body {
       color: #333; }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative; }
 
@@ -170,8 +170,9 @@ div.mobile-nav {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 80vh;
-  background-size: cover; }
+  height: 100vh;
+  background-size: cover;
+  cursor: crosshair; }
 
 .intro-section {
   height: 80vh; }
@@ -390,24 +391,32 @@ h1.section-title {
 
   .canvas-container {
     position: relative;
-    height: 80vh; }
+    height: 98vh; }
     .canvas-container h1 {
       position: relative;
-      top: -600px;
-      max-width: 600px;
+      top: -55vh;
+      max-width: 66%;
       margin: 0 auto;
-      font-size: 46px;
-      line-height: 52px;
+      font-size: 60px;
+      line-height: 66px;
       color: #000; }
 
   h1.section-title {
     font-size: 48px; }
 
   .bio-section .col-2-mobile h1 {
-    font-size: 48px; }
+    font-size: 60px; }
+
+  #work {
+    height: 0px;
+    margin: 0px;
+    position: relative;
+    top: -70px; }
 
   .work-section {
-    text-align: center; }
+    text-align: center;
+    background: #eee;
+    padding: 40px 0px; }
 
   .work-item {
     position: relative;
@@ -421,7 +430,7 @@ h1.section-title {
       position: absolute;
       left: 0px;
       top: 0px;
-      background: #B1E5FD; }
+      background: #ccc; }
     .work-item .work-info {
       position: absolute;
       top: auto;
@@ -431,7 +440,28 @@ h1.section-title {
         margin: 0;
         text-align: right;
         font-family: "franklin-gothic-urw", sans-serif;
-        font-size: 22px;
+        font-size: 24px;
         color: #333; }
       .work-item .work-info h2 {
-        font-weight: 400; } }
+        font-weight: 400; }
+
+  .bio-section {
+    background-position: 0 -140px;
+    height: 80vh; }
+    .bio-section .profile-pic {
+      background: #0086D4 !important; }
+
+  .bio-section-2 .bio-statement {
+    width: 100%;
+    margin: 0 auto;
+    display: block; }
+    .bio-section-2 .bio-statement p {
+      font-family: 'franklin-gothic-urw';
+      font-weight: 100;
+      font-size: 24px;
+      line-height: 32px;
+      color: #333;
+      padding: 0 10px;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 20px; } }
