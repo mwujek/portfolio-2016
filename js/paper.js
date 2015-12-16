@@ -9,8 +9,8 @@ var lineSpeed = 80; // higher = faster
 var minRadius = 3;
 var radiusRange = 6;
 var maxRadius = radiusRange - minRadius;
-var pathStrokeWeight = 60;
-
+var screenWidth = view.size.width;
+var pathStrokeWeight = screenWidth / 15;
 
 
 
@@ -166,7 +166,7 @@ function onFrame(event) {
     lineItem.strokeColor.hue +=0.5;
   } // end of loop for circles only
 } // end of frame animation function
-function onMouseDown(event){
+function onMouseUp(event){
     console.log(event.point.x)
     console.log(event.point.y)
     console.log(event.point)
@@ -185,4 +185,13 @@ function onMouseDown(event){
      }
 }
 
-// text
+function onResize(event) {
+    // Whenever the view is resized, move the path to its center:
+    var screenW = event.size.width;
+    console.log(screenW)
+    for (var i = 0; i < count; i++) {
+        var lineItem = lineLayer.children[i];
+        lineItem.strokeWidth = screenW / 15;
+    }
+    
+}

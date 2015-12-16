@@ -9,26 +9,25 @@
 body {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 400;
-  -moz-font-feature-settings: "lnum";
-  -ms-font-feature-settings: "lnum";
-  -o-font-feature-settings: "lnum";
-  -webkit-font-feature-settings: "lnum";
-  font-feature-settings: "lnum";
   color: #483D3D;
   margin: 0px;
   padding: 0px;
-  font-family: 'martin gothic medium'; }
+  font-family: 'martin gothic medium';
+  overflow-x: hidden; }
 
 body,
 html {
-  height: 100%; }
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  font-kerning: normal;
+  -webkit-font-kerning: normal;
+  -moz-font-kerning: normal; }
 
 body {
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
-  -webkit-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig";
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
