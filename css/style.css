@@ -126,7 +126,7 @@ div.mobile-nav {
     font-size: 20px; }
 
 .mobile-nav-right {
-  background: #333;
+  background: #00559D;
   height: 100%;
   position: relative; }
   .mobile-nav-right h1 {
@@ -321,15 +321,50 @@ h1.section-title {
 .work-content p {
   font-family: 'franklin-gothic-urw';
   padding: 0 10px;
-  color: #333; }
-
-.hidden-section {
-  opacity: 0; }
+  color: #333;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px; }
+.work-content h3 {
+  font-family: 'martin gothic light';
+  font-size: 28px;
+  padding: 0 10px;
+  margin: 0px 0px -6px 0px;
+  text-align: center; }
 
 .project-gallery img {
   height: 300px; }
 .project-gallery li.dot {
   background: #7DD3FC; }
+
+.project-title {
+  font-size: 32px;
+  padding: 0 10px;
+  margin: 20px 0px 0px 0px;
+  text-align: center; }
+
+.project-subtitle {
+  text-align: center;
+  font-family: 'franklin-gothic-urw';
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0px;
+  margin-bottom: 2px;
+  padding: 0 10px; }
+
+.project-hr {
+  margin: 20px auto 20px auto;
+  width: 80%;
+  border: none;
+  border-top: 1px solid #ccc; }
+
+.project-gallery {
+  margin-bottom: 50px; }
+
+footer {
+  width: 100%;
+  height: 300px;
+  background: #00559D; }
 
 @media (min-width: 700px) {
   div.mobile-nav, nav {
@@ -464,4 +499,10 @@ h1.section-title {
       padding: 0 10px;
       max-width: 800px;
       margin: 0 auto;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+
+  .project-gallery .col {
+    background: #fff;
+    padding: 0 6px;
+    text-align: center;
+    overflow: hidden; } }
