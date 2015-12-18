@@ -224,8 +224,8 @@ h1.section-title {
       font-weight: 400; }
 
 .bio-section {
-  background: url(../img/surf.png);
-  background-size: cover;
+  background: url(../img/surf.jpg);
+  background-size: 100% auto;
   width: 100%;
   height: 40vh;
   position: relative;
@@ -488,11 +488,8 @@ footer {
       .work-item .work-info h2 {
         font-weight: 400; }
 
-  .bio-section {
-    background-position: 0 -140px;
-    height: 80vh; }
-    .bio-section .profile-pic {
-      background: #0086D4 !important; }
+  .bio-section .profile-pic {
+    background: url(../img/profile.png); }
 
   .bio-section-2 .bio-statement {
     width: 100%;

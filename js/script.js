@@ -14,6 +14,11 @@ var setIntroType = function (){
 		'left': ((screenW - introW) / 2) + 'px'
 	})
 }
+var setBioPic = function(){
+	var pic = $('.bio-section');
+	var screenW = $(window).width();
+	pic.css('height', screenW * 0.6 + 'px');
+}
 var smoothScroll= function(){
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -32,6 +37,7 @@ var smoothScroll= function(){
 $(window).load(function() {
 	// set type
 	setIntroType();
+	setBioPic();
 	smoothScroll();
 });
 
@@ -137,4 +143,5 @@ var waypoints = $('#work').waypoint({
 
   $(window).resize(function() {
     setIntroType();
+    setBioPic();
   }); // end of resize

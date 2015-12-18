@@ -303,10 +303,11 @@ h1.section-title{
 
 
 .bio-section{
-  background: url(../img/surf.png);
-  background-size: cover;
+  background: url(../img/surf.jpg);
+  background-size: 100% auto;
   width: 100%;
   height: 40vh;
+  //background-repeat: no-repeat;
   //vertical-align: middle;
   position: relative;
   margin-bottom: 80px;
@@ -648,10 +649,8 @@ footer{
 
 // bio section
 .bio-section{
-  background-position: 0 -140px;
-  height: 80vh; 
   .profile-pic{
-    background: $blue-400 !important;
+    background: url(../img/profile.png);
   }
 }
 .bio-section-2{
