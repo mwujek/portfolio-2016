@@ -80,7 +80,7 @@ nav {
   padding: 10px 0px;
   background: #fff;
   color: #333;
-  border-bottom: 1px solid #0086D4;
+  border-bottom: 1px solid #333;
   z-index: 9999999; }
   nav div.menu-header-wrapper {
     display: block;
@@ -100,6 +100,12 @@ nav {
     font-family: 'martin gothic light'; }
   nav h2.mobile-hidden {
     display: none; }
+
+.nav-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%; }
 
 .menu-navigation-wrapper {
   position: absolute;
@@ -123,6 +129,9 @@ div.mobile-nav {
     background: #E0F5FF;
     border-bottom: 1px solid #7DD3FC;
     font-size: 20px; }
+
+.mobile-nav-left {
+  background: #E0F5FF; }
 
 .mobile-nav-right {
   background: #00559D;
@@ -182,13 +191,19 @@ div.mobile-nav {
 .type-set {
   vertical-align: middle;
   height: 80vh; }
-  .type-set h1 {
-    margin: 0;
-    padding: 10px;
-    font-size: 28px;
-    line-height: 32px;
-    color: #333;
-    font-family: 'martin gothic light'; }
+
+h1.intro-heading {
+  margin: 0;
+  padding: 10px;
+  font-size: 28px;
+  line-height: 32px;
+  width: 100% !important;
+  padding: 0 20px;
+  box-sizing: border-box;
+  left: 0px !important;
+  color: #333;
+  font-family: 'martin gothic light';
+  position: absolute; }
 
 h1.section-title {
   font-size: 32px;
@@ -200,6 +215,16 @@ h1.section-title {
   background: #eee;
   text-align: center;
   padding: 40px 0px; }
+
+#work {
+  height: 0px;
+  margin: 0px;
+  position: relative;
+  top: -45px;
+  transition: 0.3s opacity; }
+
+.hide-work-title {
+  opacity: 0; }
 
 .work-item {
   position: relative;
@@ -438,7 +463,7 @@ footer {
 
   .canvas-container {
     position: relative;
-    height: 98vh; }
+    height: 100vh; }
     .canvas-container h1 {
       position: absolute;
       max-width: 66%;
@@ -456,9 +481,6 @@ footer {
     font-size: 60px; }
 
   #work {
-    height: 0px;
-    margin: 0px;
-    position: relative;
     top: -70px; }
 
   .work-item {

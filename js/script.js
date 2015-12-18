@@ -50,9 +50,12 @@ menuBtn.click(function() {
   navMenu.toggleClass('show-mobile-nav');
 });
 
-//hide desktop
+//hide desktop & work
+var workSection = $('#work');
 var desktopNav = $('.desktop-nav');
 desktopNav.toggleClass('hide-desktop-nav');
+workSection.toggleClass('hide-work-title');
+
 
 // flickity function
 var globalFunction = function() {
@@ -123,8 +126,8 @@ if(href === '/everlane.html'){
 
 
 //waypoints ... get to work
-var workSection = $('#work');
-var waypoints = $('#work').waypoint({
+var canvas = $('.canvas-container')
+$('#work').waypoint({
 	offset: '50%',
 	handler: function(direction) {
 		
@@ -133,6 +136,19 @@ var waypoints = $('#work').waypoint({
 		}
 		if (direction === 'up' && desktopNav.not('.hide-desktop-nav') ){
 			desktopNav.toggleClass('hide-desktop-nav');
+			console.log('not class');
+		}
+	}
+});
+
+canvas.waypoint({
+	offset: '-10px',
+	handler: function(direction) {
+		if (direction === 'down' && workSection.hasClass('hide-work-title') ){
+			workSection.toggleClass('hide-work-title');
+		}
+		if (direction === 'up' && workSection.not('.hide-work-title') ){
+			workSection.toggleClass('hide-work-title');
 			console.log('not class');
 		}
 	}

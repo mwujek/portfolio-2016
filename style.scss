@@ -104,7 +104,7 @@ nav{
   padding:10px 0px;
   background: #fff;
   color: $blue-500;
-  border-bottom: 1px solid $blue-400;
+  border-bottom: 1px solid #333;
   z-index: 9999999;
   div.menu-header-wrapper{
     display: block;
@@ -132,7 +132,12 @@ nav{
     display: none;
   }
 }
-
+.nav-wrapper{
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width: 100%;
+}
 
 .menu-navigation-wrapper{
   position: absolute;
@@ -165,7 +170,9 @@ div.mobile-nav{
     }
   }
 }
-
+.mobile-nav-left{
+  background: $blue-000;
+}
 .mobile-nav-right{
   background: $blue-450;
   height: 100%;
@@ -241,17 +248,23 @@ overflow: hidden;
   vertical-align: middle;
   height: 80vh;
   //background: rgba(0,134,212,0.8);
-  h1{
+}
+
+h1.intro-heading{
     margin: 0;
     padding: 10px;
     font-size: 28px;
     line-height: 32px;
+    width: 100% !important;
+    padding: 0 20px;
+    box-sizing: border-box;
+    left: 0px !important;
     color: #333;
     font-family: 'martin gothic light';
+    position: absolute;
     //letter-spacing: 0.5px;
 
   }
-}
 
 h1.section-title{
   font-size: 32px;
@@ -265,6 +278,16 @@ h1.section-title{
   background: #eee;
   text-align: center;
   padding: 40px 0px;
+}
+#work{
+  height: 0px;
+  margin: 0px;
+  position: relative;
+  top: -45px;
+  transition: 0.3s opacity;
+}
+.hide-work-title{
+  opacity: 0;
 }
 // work image
 .work-item{
@@ -580,7 +603,7 @@ footer{
   }
   .canvas-container{
     position: relative;
-    height: 98vh;
+    height: 100vh;
     h1{
       position: absolute;
       max-width: 66%;
@@ -604,9 +627,6 @@ footer{
 
 // work section
 #work{
-  height: 0px;
-  margin: 0px;
-  position: relative;
   top: -70px;
 }
 .work-section{
