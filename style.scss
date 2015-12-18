@@ -230,6 +230,9 @@ div.mobile-nav{
   cursor: crosshair;
   //z-index: 0;
 }
+.canvas-container{
+overflow: hidden;
+  }
 // intro section
 .intro-section{
   height: 80vh;
@@ -259,7 +262,9 @@ h1.section-title{
 
 // work section
 .work-section{
-
+  background: #eee;
+  text-align: center;
+  padding: 40px 0px;
 }
 // work image
 .work-item{
@@ -496,6 +501,7 @@ footer{
 }
 // first point break
 @media (min-width: $first-break) {
+  
   div.mobile-nav, nav{display: none;}
   .desktop-nav{
     display: block;
@@ -503,6 +509,7 @@ footer{
     z-index: 999;
     top:20px;
     left:20px;
+    transition:0.2s left;
     h1{
       margin: 0;
       line-height: 16px;
@@ -524,11 +531,12 @@ footer{
       margin: 0;
       list-style: none;
       text-indent: 0;
-      margin-top: 30px;
+      margin-top: 20px;
       font-family: 'franklin-gothic-urw';
       li{
         padding: 0;
         margin: 0;
+        margin-bottom: 4px;
         text-indent: 0;
         font-size: 16px;
         font-weight: 300;
@@ -541,6 +549,9 @@ footer{
         }
       }
     }
+  }
+  .hide-desktop-nav{
+    left: -200px;
   }
   nav{
     background: none;
@@ -570,9 +581,10 @@ footer{
     position: relative;
     height: 98vh;
     h1{
-      position: relative;
-      top:-55vh;
+      position: absolute;
       max-width: 66%;
+      left: 0px;
+      top:189px;
       margin: 0 auto;
       font-size: 60px;
       line-height: 66px;
@@ -597,9 +609,6 @@ footer{
   top: -70px;
 }
 .work-section{
-  text-align: center;
-  background: #eee;
-  padding: 40px 0px;
 }
 .work-item{
   position: relative;

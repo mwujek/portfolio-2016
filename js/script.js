@@ -1,5 +1,40 @@
 /*jshint devel:true */
 
+var setIntroType = function (){
+	var intro = $('.canvas-container h1');
+	var introH = intro.height();
+	var introW = intro.width();
+	var screenH = $(window).height();
+	var screenW = $(window).width();
+	console.log("height = " + introH + "... screen height = " + screenH);
+	
+	// set type
+	intro.css({
+		'top': ((screenH - introH) / 2) + 'px',
+		'left': ((screenW - introW) / 2) + 'px'
+	})
+}
+var smoothScroll= function(){
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+}
+$(window).load(function() {
+	// set type
+	setIntroType();
+	smoothScroll();
+});
+
 
 $(document).ready(function() {
 
@@ -9,25 +44,12 @@ menuBtn.click(function() {
   navMenu.toggleClass('show-mobile-nav');
 });
 
-var workContent = $('.work-section');
-// workContent.toggleClass('hidden-section');
-// $(".everlane-title").typed({
-//     strings: ["Everlane Mobile"],
-//     contentType: 'html',
-//     typeSpeed: 50,
-//     showCursor: false,
-//      onStringTyped: function() {
-//       console.log('done!');
-//       setTimeout(function(){
-//         workContent.removeClass('hidden-section');
-//       },150);
-      
-//      }
-// });
-
+//hide desktop
+var desktopNav = $('.desktop-nav');
+desktopNav.toggleClass('hide-desktop-nav');
 
 // flickity function
-function globalFunction() {
+var globalFunction = function() {
   //var windowW = $(window).width();
   var breakPoint = 800;
 
@@ -84,6 +106,9 @@ function globalFunction() {
   }); // end of resize
 }
 
+
+
+
 // everlane
 var href = window.location.pathname;
 if(href === '/everlane.html'){
@@ -91,13 +116,25 @@ if(href === '/everlane.html'){
 }
 
 
-// waypoints ... get to work
-// var workSection = $('#work');
-// var waypoints = $('#work').waypoint({
-//   handler: function(direction) {
-//     console.log(direction + ' hit');
-//   }
-// });
+//waypoints ... get to work
+var workSection = $('#work');
+var waypoints = $('#work').waypoint({
+	offset: '50%',
+	handler: function(direction) {
+		
+		if (direction === 'down' && desktopNav.hasClass('hide-desktop-nav') ){
+			desktopNav.toggleClass('hide-desktop-nav');
+		}
+		if (direction === 'up' && desktopNav.not('.hide-desktop-nav') ){
+			desktopNav.toggleClass('hide-desktop-nav');
+			console.log('not class');
+		}
+	}
+});
 
 
 }); // end of ready
+
+  $(window).resize(function() {
+    setIntroType();
+  }); // end of resize

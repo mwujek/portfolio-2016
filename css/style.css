@@ -173,6 +173,9 @@ div.mobile-nav {
   background-size: cover;
   cursor: crosshair; }
 
+.canvas-container {
+  overflow: hidden; }
+
 .intro-section {
   height: 80vh; }
 
@@ -192,6 +195,11 @@ h1.section-title {
   color: #333;
   text-align: center;
   margin: 30px auto 20px auto; }
+
+.work-section {
+  background: #eee;
+  text-align: center;
+  padding: 40px 0px; }
 
 .work-item {
   position: relative;
@@ -374,7 +382,8 @@ footer {
     position: fixed;
     z-index: 999;
     top: 20px;
-    left: 20px; }
+    left: 20px;
+    transition: 0.2s left; }
     .desktop-nav h1 {
       margin: 0;
       line-height: 16px;
@@ -393,11 +402,12 @@ footer {
       margin: 0;
       list-style: none;
       text-indent: 0;
-      margin-top: 30px;
+      margin-top: 20px;
       font-family: 'franklin-gothic-urw'; }
       .desktop-nav ul.nav-list-desktop li {
         padding: 0;
         margin: 0;
+        margin-bottom: 4px;
         text-indent: 0;
         font-size: 16px;
         font-weight: 300; }
@@ -406,6 +416,9 @@ footer {
           color: #333; }
           .desktop-nav ul.nav-list-desktop li a:active {
             color: #333; }
+
+  .hide-desktop-nav {
+    left: -200px; }
 
   nav {
     background: none;
@@ -427,9 +440,10 @@ footer {
     position: relative;
     height: 98vh; }
     .canvas-container h1 {
-      position: relative;
-      top: -55vh;
+      position: absolute;
       max-width: 66%;
+      left: 0px;
+      top: 189px;
       margin: 0 auto;
       font-size: 60px;
       line-height: 66px;
@@ -446,11 +460,6 @@ footer {
     margin: 0px;
     position: relative;
     top: -70px; }
-
-  .work-section {
-    text-align: center;
-    background: #eee;
-    padding: 40px 0px; }
 
   .work-item {
     position: relative;
