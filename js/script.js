@@ -46,7 +46,11 @@ $(document).ready(function() {
 
 var menuBtn = $('.menu-icon');
 var navMenu = $('.menu-navigation-wrapper');
+var navLink = $('.menu-navigation-wrapper a');
 menuBtn.click(function() {
+  navMenu.toggleClass('show-mobile-nav');
+});
+navLink.click(function() {
   navMenu.toggleClass('show-mobile-nav');
 });
 
@@ -55,6 +59,8 @@ var workSection = $('#work');
 var desktopNav = $('.desktop-nav');
 desktopNav.toggleClass('hide-desktop-nav');
 workSection.toggleClass('hide-work-title');
+
+
 
 
 // flickity function
@@ -120,11 +126,14 @@ var globalFunction = function() {
 
 // everlane
 var href = window.location.pathname;
-if(href === '/everlane.html'){
+if(href === '/everlane.html' || href === '/p16/everlane.html'){
 	globalFunction();
+	alert("Hello! I am an alert box!! " +  $(window).width());
 }
 
 
+if(href !== '/everlane.html'){
+	
 //waypoints ... get to work
 var canvas = $('.canvas-container')
 $('#work').waypoint({
@@ -153,6 +162,7 @@ canvas.waypoint({
 		}
 	}
 });
+}
 
 
 }); // end of ready
