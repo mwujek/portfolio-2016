@@ -35,7 +35,7 @@ body {
   -ms-user-select: none;
   user-select: none; }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .row {
     width: 100%;
     display: table;
@@ -192,7 +192,11 @@ div.mobile-nav {
   vertical-align: middle;
   height: 80vh; }
 
-@media (max-width: 700px) {
+.content-container {
+  max-width: 800px;
+  margin: 0 auto; }
+
+@media (max-width: 800px) {
   h1.intro-heading {
     left: 0px !important; } }
 h1.intro-heading {
@@ -358,11 +362,11 @@ h1.section-title {
   padding: 0 10px;
   color: #333;
   font-weight: 200;
-  font-size: 16px;
-  line-height: 22px; }
+  font-size: 18px;
+  line-height: 26px; }
 .work-content h3 {
   font-family: 'martin gothic light';
-  font-size: 28px;
+  font-size: 30px;
   padding: 0 10px;
   margin: 0px 0px -6px 0px;
   text-align: center; }
@@ -451,17 +455,25 @@ footer {
   footer .footer-home-btn {
     vertical-align: middle; }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   div.mobile-nav, nav {
     display: none; }
+
+  .add-shadow {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) !important;
+    background: rgba(255, 255, 255, 0.9);
+    transition: none !important; }
 
   .desktop-nav {
     display: block;
     position: fixed;
     z-index: 999;
-    top: 20px;
-    left: 20px;
-    transition: 0.2s left; }
+    top: 0px;
+    left: 0px;
+    padding: 20px 20px 10px 20px;
+    transition: 0.2s left;
+    border-bottom-right-radius: 16px;
+    box-shadow: none; }
     .desktop-nav h1 {
       margin: 0;
       line-height: 16px;
@@ -558,7 +570,7 @@ footer {
         margin: 0;
         text-align: right;
         font-family: "franklin-gothic-urw", sans-serif;
-        font-size: 24px;
+        font-size: 22px;
         color: #333; }
       .work-item .work-info h2 {
         font-weight: 400; }
@@ -573,8 +585,8 @@ footer {
     .bio-section-2 .bio-statement p {
       font-family: 'franklin-gothic-urw';
       font-weight: 100;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 18px;
+      line-height: 26px;
       color: #333;
       padding: 0 10px;
       max-width: 800px;

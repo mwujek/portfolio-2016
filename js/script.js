@@ -6,7 +6,7 @@ var setIntroType = function (){
 	var introW = intro.width();
 	var screenH = $(window).height();
 	var screenW = $(window).width();
-	console.log("height = " + introH + "... screen height = " + screenH);
+	//console.log("height = " + introH + "... screen height = " + screenH);
 	
 	// set type
 	intro.css({
@@ -44,21 +44,52 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
-var menuBtn = $('.menu-icon');
-var navMenu = $('.menu-navigation-wrapper');
-var navLink = $('.menu-navigation-wrapper a');
-menuBtn.click(function() {
-  navMenu.toggleClass('show-mobile-nav');
-});
-navLink.click(function() {
-  navMenu.toggleClass('show-mobile-nav');
-});
+  var menuBtn = $('.menu-icon');
+  var navMenu = $('.menu-navigation-wrapper');
+  var navLink = $('.menu-navigation-wrapper a');
+  menuBtn.click(function() {
+    navMenu.toggleClass('show-mobile-nav');
+  });
+  navLink.click(function() {
+    navMenu.toggleClass('show-mobile-nav');
+  });
 
 //hide desktop & work
+var widthThreshold = 1300;
+var shadowThreshold = 1130;
+var placeProjectNav = function(){
+  var href = window.location.pathname;
+  if (href === '/everlane.html'){
+    var nav = $('.desktop-nav');
+    var screenWidth = $(window).width();
+  //console.log(screenWidth);
+  if ( screenWidth > shadowThreshold){
+    nav.removeClass('add-shadow');
+  } else {
+    nav.addClass('add-shadow');
+    nav.css('left', '0px');
+
+  }
+  if ( screenWidth > shadowThreshold){
+
+    var contentW = $('.content-container').width();
+    var navOffset = ((screenWidth - shadowThreshold) / 2);
+    console.log(navOffset)
+    nav.css('left', navOffset + 'px');
+
+  }
+}
+
+}
 var workSection = $('#work');
 var desktopNav = $('.desktop-nav');
-desktopNav.toggleClass('hide-desktop-nav');
-workSection.toggleClass('hide-work-title');
+var href = window.location.pathname;
+if(href !== '/everlane.html'){ //|| href !== '/p16/everlane.html'){
+  desktopNav.toggleClass('hide-desktop-nav');
+} else {
+  placeProjectNav();
+}
+
 
 
 
@@ -118,6 +149,7 @@ var globalFunction = function() {
     if (resizeObject.mobileView && currentW > resizeObject.breakWidth || !resizeObject.mobileView && currentW < resizeObject.breakWidth) {
       toggleFlicker();
     }
+    placeProjectNav();
   }); // end of resize
 }
 
@@ -125,10 +157,10 @@ var globalFunction = function() {
 
 
 // everlane
-var href = window.location.pathname;
+href = window.location.pathname;
 if(href === '/everlane.html' || href === '/p16/everlane.html'){
 	globalFunction();
-	alert("Hello! I am an alert box!! " +  $(window).width());
+	//alert("Hello! I am an alert box!! " +  $(window).width());
 }
 
 
@@ -167,7 +199,7 @@ canvas.waypoint({
 
 }); // end of ready
 
-  $(window).resize(function() {
-    setIntroType();
-    setBioPic();
+$(window).resize(function() {
+  setIntroType();
+  setBioPic();
   }); // end of resize
