@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,800,900,700,600,500,300);
 @font-face {
   font-family: 'martin gothic medium';
   src: url("../fonts/martin-gothic-medium.eot");
@@ -26,14 +27,6 @@ html {
   font-kerning: normal;
   -webkit-font-kerning: normal;
   -moz-font-kerning: normal; }
-
-body {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
 
 @media (min-width: 800px) {
   .row {
@@ -95,6 +88,7 @@ nav {
     display: inline-block;
     margin: 0;
     margin-left: 10px;
+    font-size: 24px;
     position: relative;
     top: 3px;
     font-family: 'martin gothic light'; }
@@ -195,6 +189,19 @@ div.mobile-nav {
 .content-container {
   max-width: 800px;
   margin: 0 auto; }
+
+.project-hero-img {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+  background: #999;
+  display: table; }
+  .project-hero-img .col {
+    vertical-align: middle;
+    color: #fff;
+    display: table-cell; }
+    .project-hero-img .col h1 {
+      font-family: 'martin gothic light'; }
 
 @media (max-width: 800px) {
   h1.intro-heading {

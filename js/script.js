@@ -158,7 +158,7 @@ var globalFunction = function() {
 
 // everlane
 href = window.location.pathname;
-if(href === '/everlane.html' || href === '/p16/everlane.html'){
+if(href === '/everlane.html' || href === '/revolver-yoga.html' || href === '/p16/everlane.html'){
 	globalFunction();
 	//alert("Hello! I am an alert box!! " +  $(window).width());
 }
