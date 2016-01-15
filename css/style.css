@@ -462,6 +462,40 @@ footer {
   footer .footer-home-btn {
     vertical-align: middle; }
 
+.quote-block {
+  padding-left: 30px;
+  border-left: 1px solid #ccc;
+  margin: 30px 0; }
+
+.quote-source {
+  font-weight: 500 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+  top: -20px; }
+
+.quote-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-size: cover !important;
+  display: inline-block;
+  position: relative;
+  top: 19px;
+  margin-right: 10px; }
+
+.quote-aaron {
+  background: url(../img/aaron.jpg); }
+
+.quote-cheryl {
+  background: url(../img/cheryl.jpg); }
+
+.quote-courtney {
+  background: url(../img/courtney.jpg); }
+
+.quote-leif {
+  background: url(../img/leif.jpg); }
+
 @media (min-width: 800px) {
   div.mobile-nav, nav {
     display: none; }
