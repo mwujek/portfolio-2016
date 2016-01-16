@@ -14,7 +14,8 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'martin gothic medium';
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: url(../img/bg.jpg); }
 
 body,
 html {
@@ -59,7 +60,7 @@ html {
     text-indent: 0; }
     .reg-list li a, div.mobile-nav ul.nav-list li a, .mobile-nav-right ul.contact-info li a, .mobile-nav-right div.social-media ul li a, .contact-btn-wrapper ul li a {
       text-decoration: none;
-      color: #333; }
+      color: #111; }
 
 .container {
   max-width: 100%;
@@ -72,7 +73,7 @@ html {
 nav {
   padding: 10px 0px;
   background: #fff;
-  color: #333;
+  color: #111;
   border-bottom: 1px solid #333;
   z-index: 9999999; }
   nav div.menu-header-wrapper {
@@ -220,12 +221,11 @@ h1.intro-heading {
 
 h1.section-title {
   font-size: 32px;
-  color: #333;
+  color: #111;
   text-align: center;
   margin: 30px auto 20px auto; }
 
 .work-section {
-  background: #eee;
   text-align: center;
   padding: 40px 0px; }
 
@@ -257,7 +257,7 @@ h1.section-title {
       margin: 0;
       font-family: "franklin-gothic-urw", sans-serif;
       font-size: 22px;
-      color: #333;
+      color: #fff;
       text-align: left; }
     .work-item .work-info h2 {
       font-weight: 400; }
@@ -297,7 +297,7 @@ h1.section-title {
 .bio-section-2 p {
   font-family: 'franklin-gothic-urw';
   font-weight: 400;
-  color: #333;
+  color: #111;
   padding: 0 10px; }
 
 .contact-btn-wrapper {
@@ -313,7 +313,7 @@ h1.section-title {
       height: 50px;
       border-radius: 50px;
       line-height: 50px;
-      background: #333;
+      background: #111;
       margin: 0px 4px; }
       .contact-btn-wrapper ul li a {
         color: #fff;
@@ -356,7 +356,7 @@ h1.section-title {
 
 .work-title {
   font-size: 32px;
-  color: #333;
+  color: #111;
   text-align: center;
   margin: 30px auto 20px auto; }
 
@@ -367,7 +367,7 @@ h1.section-title {
 .work-content p {
   font-family: 'franklin-gothic-urw';
   padding: 0 10px;
-  color: #333;
+  color: #111;
   font-weight: 200;
   font-size: 18px;
   line-height: 26px; }
@@ -496,6 +496,10 @@ footer {
 .quote-leif {
   background: url(../img/leif.jpg); }
 
+#scoot-project {
+  background: url(../img/scoot-project.jpg);
+  background-size: cover; }
+
 @media (min-width: 800px) {
   div.mobile-nav, nav {
     display: none; }
@@ -601,7 +605,7 @@ footer {
       position: absolute;
       left: 0px;
       top: 0px;
-      background: #ccc; }
+      background-size: cover !important; }
     .work-item .work-info {
       position: absolute;
       top: auto;
@@ -612,12 +616,105 @@ footer {
         text-align: right;
         font-family: "franklin-gothic-urw", sans-serif;
         font-size: 22px;
-        color: #333; }
+        color: #fff; }
+      .work-item .work-info h1 {
+        font-weight: 400;
+        letter-spacing: 0.5px; }
       .work-item .work-info h2 {
-        font-weight: 400; }
+        font-weight: 100; }
 
+  #gap-gradient {
+    -webkit-animation: moveGradient 6s ease infinite;
+    -moz-animation: moveGradient 6s ease infinite;
+    animation: moveGradient 6s ease infinite;
+    background: linear-gradient(89deg, #01834B, #0086d4);
+    background-size: 400% 400%; }
+
+  #image-gap {
+    background: none; }
+    #image-gap .col {
+      vertical-align: middle; }
+
+  #image-everlane {
+    background: url(../img/everlane-project.jpg); }
+
+  #image-scoot-networks {
+    background: url(../img/scoot-project.jpg); }
+
+  #image-revolver-yoga .col {
+    background: #555;
+    vertical-align: middle; }
+    #image-revolver-yoga .col .animation-container {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      display: inline-block; }
+      #image-revolver-yoga .col .animation-container img {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation: spin 4s infinite;
+        animation-timing-function: cubic-bezier(0.18, 0.89, 0.25, 1);
+        -webkit-animation: spin 4s infinite;
+        -webkit-animation-timing-function: cubic-bezier(0.18, 0.89, 0.25, 1);
+        -moz-animation: spin 4s infinite;
+        -moz-animation-timing-function: cubic-bezier(0.18, 0.89, 0.25, 1); }
+    #image-revolver-yoga .col .work-info h1, #image-revolver-yoga .col .work-info h2 {
+      color: #fff; }
+
+  #image-bamm {
+    background: url(../img/bamm-project.gif);
+    border: 1px solid #666; }
+
+  #image-flying-pixels {
+    background: url(../img/fp.gif); }
+
+  .dark-text {
+    color: #333 !important; }
+
+  h1.dark-text {
+    font-weight: 500 !important; }
+
+  @-webkit-keyframes spin {
+    0% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(360deg); } }
+  @-moz-keyframes spin {
+    0% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(360deg); } }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(360deg); } }
+  @-webkit-keyframes moveGradient {
+    0% {
+      background-position: 0% 51%; }
+    50% {
+      background-position: 100% 50%; }
+    100% {
+      background-position: 0% 51%; } }
+  @-moz-keyframes moveGradient {
+    0% {
+      background-position: 0% 51%; }
+    50% {
+      background-position: 100% 50%; }
+    100% {
+      background-position: 0% 51%; } }
+  @keyframes moveGradient {
+    0% {
+      background-position: 0% 51%; }
+    50% {
+      background-position: 100% 50%; }
+    100% {
+      background-position: 0% 51%; } }
   .bio-section .profile-pic {
-    background: url(../img/profile.png); }
+    background: url(../img/profile.png);
+    display: none; }
 
   .bio-section-2 .bio-statement {
     width: 100%;
@@ -628,7 +725,7 @@ footer {
       font-weight: 100;
       font-size: 18px;
       line-height: 26px;
-      color: #333;
+      color: #111;
       padding: 0 10px;
       max-width: 800px;
       margin: 0 auto;

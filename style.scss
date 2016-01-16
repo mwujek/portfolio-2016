@@ -26,6 +26,7 @@ body {
   padding:0px;
   font-family: 'martin gothic medium';
   overflow-x:hidden;
+  background: url(../img/bg.jpg);
 
 }
 
@@ -54,7 +55,7 @@ body {
 
 // colors
 
-$blue-500: #333;
+$blue-500: #111;
 $blue-450: #00559D;
 $blue-400: #0086D4;
 $blue-300: #00A7F7;
@@ -307,7 +308,7 @@ h1.section-title{
 
 // work section
 .work-section{
-  background: #eee;
+  //background: #eee;
   text-align: center;
   padding: 40px 0px;
 }
@@ -341,7 +342,7 @@ h1.section-title{
       margin: 0;
       font-family: $franklin;
       font-size: 22px;
-      color: $blue-500;
+      color: #fff;
       text-align: left;
     }
     h1{
@@ -654,6 +655,11 @@ $quote-diameter: 50px;
 .quote-courtney{ background: url(../img/courtney.jpg);}
 .quote-leif{ background: url(../img/leif.jpg);}
 
+
+// per project
+#scoot-project{background: url(../img/scoot-project.jpg); background-size: cover;}
+
+
 // first point break
 @media (min-width: $first-break) {
   
@@ -782,7 +788,8 @@ $quote-diameter: 50px;
     position: absolute;
     left: 0px;
     top: 0px;
-    background: #ccc;
+    //border: 1px solid #999;
+    background-size: cover !important;
   }
   .work-info{
     position: absolute;
@@ -794,22 +801,113 @@ $quote-diameter: 50px;
       text-align: right;
       font-family: $franklin;
       font-size: 22px;
-      color: $blue-500;
+      color: #fff;
+
 
     }
     h1{
+      font-weight: 400;
+      letter-spacing: 0.5px;
     }
     h2{
-      font-weight: 400;
+      font-weight: 100;
     }
 
   }
 } // end of work item
+#gap-gradient{
+-webkit-animation: moveGradient 6s ease infinite;
+  -moz-animation: moveGradient 6s ease infinite;
+  animation: moveGradient 6s ease infinite;
+  background: linear-gradient(89deg, #01834B, #0086d4);
+  background-size: 400% 400%;
+}
+#image-gap{
+  background: none;
+  .col{
+    vertical-align: middle;
+  }
+}
+#image-everlane{ background: url(../img/everlane-project.jpg);}
+#image-scoot-networks{ background: url(../img/scoot-project.jpg);}
+#image-revolver-yoga{
+  .col{
+    background: #555;
+    vertical-align: middle;
+    .animation-container{
+      width: 120px;
+      height: 120px;
+      position: relative;
+      display: inline-block;
+      img{
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation: spin 4s infinite;
+        animation-timing-function: cubic-bezier(0.18, 0.89, 0.25, 1);
+        -webkit-animation: spin 4s infinite;
+        -webkit-animation-timing-function: cubic-bezier(0.18, 0.89, 0.25, 1);
+        -moz-animation: spin 4s infinite;
+        -moz-animation-timing-function: cubic-bezier(0.18, 0.89, 0.25, 1);
+      }
+    }
+    .work-info{
+      h1,h2{
+        color: #fff;
+      }
+    }
+  }
+}
+
+#image-bamm{ background: url(../img/bamm-project.gif); border: 1px solid #666;}
+#image-flying-pixels{ background: url(../img/fp.gif);}
+
+// animations and classes
+.dark-text{
+  color: #333 !important;
+}
+h1.dark-text{
+  font-weight: 500 !important;
+}
+
+@-webkit-keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes moveGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes moveGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes moveGradient { 
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
 
 // bio section
 .bio-section{
   .profile-pic{
     background: url(../img/profile.png);
+    display: none;
   }
 }
 .bio-section-2{

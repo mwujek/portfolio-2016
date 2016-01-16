@@ -59,7 +59,8 @@ var widthThreshold = 1300;
 var shadowThreshold = 1130;
 var placeProjectNav = function(){
   var href = window.location.pathname;
-  if (href === '/everlane.html'){
+  console.log("href:" + href);
+  if (href !== '/index.html' || '/' ){
     var nav = $('.desktop-nav');
     var screenWidth = $(window).width();
   //console.log(screenWidth);
@@ -84,7 +85,8 @@ var placeProjectNav = function(){
 var workSection = $('#work');
 var desktopNav = $('.desktop-nav');
 var href = window.location.pathname;
-if(href !== '/everlane.html'){ //|| href !== '/p16/everlane.html'){
+//console.log('href is: ' + href);
+if(href === '/'){ //|| href !== '/p16/everlane.html'){
   desktopNav.toggleClass('hide-desktop-nav');
 } else {
   placeProjectNav();
@@ -158,7 +160,7 @@ var globalFunction = function() {
 
 // everlane
 href = window.location.pathname;
-if(href === '/everlane.html' || href === '/revolver-yoga.html' || href === '/p16/everlane.html'){
+if(href !== '/'){
 	globalFunction();
 	//alert("Hello! I am an alert box!! " +  $(window).width());
 }
