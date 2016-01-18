@@ -713,7 +713,9 @@ img.border{
 // video
 .video-cell{
 text-align: center;
-  iframe{
+  p{
+    margin: 0 auto;
+    padding: 6px 0 30px 0;
   }
 }
 
@@ -730,7 +732,14 @@ text-align: center;
 .title-cell{
   position: relative; 
 }
-
+span.mobile-tag{
+  display: block;
+  text-align: center;
+  font-family: 'franklin-gothic-urw';
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
 .info-tag{
   background: white;
   color: $blue-500;

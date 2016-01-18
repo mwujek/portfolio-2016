@@ -11357,17 +11357,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/bamm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 135798,
-		"inputAbbreviatedPath": "\/img\/bamm.jpg",
-		"outputAbbreviatedPath": "\/img\/bamm.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -11478,17 +11467,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/profile.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 279326,
-		"inputAbbreviatedPath": "\/img\/profile.png",
-		"outputAbbreviatedPath": "\/img\/profile.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/revolver-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -11584,39 +11562,6 @@
 		"initialSize": 78205,
 		"inputAbbreviatedPath": "\/img\/scoot-project.jpg",
 		"outputAbbreviatedPath": "\/img\/scoot-project.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/surf.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 208634,
-		"inputAbbreviatedPath": "\/img\/surf.jpg",
-		"outputAbbreviatedPath": "\/img\/surf.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/surf.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 449248,
-		"inputAbbreviatedPath": "\/img\/surf.png",
-		"outputAbbreviatedPath": "\/img\/surf.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/surf2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 494864,
-		"inputAbbreviatedPath": "\/img\/surf2.png",
-		"outputAbbreviatedPath": "\/img\/surf2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
