@@ -55,6 +55,12 @@ html {
   padding: 0;
   margin: 0; }
 
+a, a:visited {
+  color: #00A7F7; }
+
+a:hover {
+  color: #0086D4; }
+
 .reg-list, div.mobile-nav ul.nav-list, .mobile-nav-right ul.contact-info, .mobile-nav-right div.social-media ul, .contact-btn-wrapper ul {
   padding: 0;
   margin: 0;
@@ -209,6 +215,15 @@ div.mobile-nav {
     display: table-cell; }
     .project-hero-img .col h1 {
       font-family: 'martin gothic light'; }
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block; }
+
+img.extra-margin {
+  margin: 20px auto; }
 
 @media (max-width: 800px) {
   h1.intro-heading {
@@ -402,6 +417,18 @@ h1.section-title {
   margin-bottom: 2px;
   padding: 0 10px; }
 
+.project-url {
+  text-align: center;
+  margin: 0; }
+  .project-url a {
+    color: #fff;
+    font-family: 'franklin-gothic-urw';
+    font-weight: 100;
+    font-size: 18px;
+    transition: color 0.2s; }
+    .project-url a:hover {
+      color: #FF8000; }
+
 .project-hr {
   margin: 20px auto 20px auto;
   width: 80%;
@@ -516,6 +543,86 @@ footer {
   background: url(../img/bamm-project-dark.jpg);
   background-size: cover; }
 
+#gc-project {
+  background: url(../img/gc-title.png);
+  background-size: cover; }
+
+.online-demo-container {
+  width: 100%;
+  padding: 10px 0;
+  background: #eee;
+  border-radius: 8px;
+  text-align: center; }
+
+h1.link-list-heading {
+  font-family: 'franklin-gothic-urw';
+  margin-left: 10px;
+  font-size: 18px; }
+
+img.border {
+  border: 1px solid #ddd; }
+
+.video-cell {
+  text-align: center; }
+
+.gallery-cell {
+  position: relative; }
+  .gallery-cell img {
+    display: block;
+    margin: 10px auto; }
+
+.title-cell {
+  position: relative; }
+
+.info-tag {
+  background: white;
+  color: #111;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  position: absolute;
+  bottom: 10px;
+  right: -10px;
+  font-family: 'franklin-gothic-urw';
+  font-weight: 400;
+  font-size: 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); }
+
+.link-list {
+  text-indent: 0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px; }
+  .link-list li {
+    padding: 0px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 10px; }
+    .link-list li span {
+      color: #333;
+      display: inline-block;
+      padding: 8px 15px;
+      background: #eee;
+      border: 1px solid #999;
+      box-shadow: inset 2px 2px 10px #fff;
+      border-radius: 4px;
+      font-family: 'franklin-gothic-urw';
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+      -webkit-user-select: none;
+      /* Chrome all / Safari all */
+      -moz-user-select: none;
+      /* Firefox all */
+      -ms-user-select: none;
+      /* IE 10+ */
+      user-select: none;
+      /* Likely future */
+      margin-left: 10px; }
+      .link-list li span:hover {
+        border-color: #666; }
+      .link-list li span:active {
+        box-shadow: inset 2px 2px 10px #aaa; }
+
 @media (min-width: 800px) {
   div.mobile-nav, nav {
     display: none; }
@@ -606,6 +713,22 @@ footer {
   .bio-section .col-2-mobile h1 {
     font-size: 60px; }
 
+  .coming-soon {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+    .coming-soon:hover {
+      cursor: not-allowed; }
+    .coming-soon .col {
+      vertical-align: middle; }
+    .coming-soon p {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: 'franklin-gothic-urw'; }
+
   #work {
     top: -70px; }
 
@@ -683,8 +806,8 @@ footer {
     background: url(../img/bamm-project.gif);
     border: 1px solid #666; }
 
-  #image-flying-pixels {
-    background: url(../img/fp.gif); }
+  #image-graphics-center {
+    background: url(../img/graphic-center-project.gif); }
 
   .dark-text {
     color: #333 !important; }
@@ -747,9 +870,17 @@ footer {
       margin: 0 auto;
       margin-bottom: 20px; }
 
-  .project-gallery .col {
+  .project-gallery .col, .project-gallery .col-2-mobile {
     background: #fff;
     padding: 0 6px;
     text-align: center;
+    overflow: hidden; }
+
+  .half {
+    display: inline-block;
+    width: 47%;
     overflow: hidden;
-    display: block; } }
+    margin: 0 4px; }
+
+  .include-half {
+    text-align: center; } }
