@@ -29,6 +29,12 @@ html {
   -webkit-font-kerning: normal;
   -moz-font-kerning: normal; }
 
+::-moz-selection {
+  background: #FF8000; }
+
+::selection {
+  background: #FF8000; }
+
 @media (min-width: 800px) {
   .row {
     width: 100%;
@@ -378,8 +384,6 @@ h1.section-title {
   margin: 0px 0px -6px 0px;
   text-align: center; }
 
-.project-gallery img {
-  height: 300px; }
 .project-gallery li.dot {
   background: #7DD3FC; }
 
@@ -497,7 +501,19 @@ footer {
   background: url(../img/leif.jpg); }
 
 #scoot-project {
-  background: url(../img/scoot-project.jpg);
+  background: url(../img/scoot-project-dark.jpg);
+  background-size: cover; }
+
+#everlane-project {
+  background: url(../img/everlane-project-dark.jpg);
+  background-size: cover; }
+
+#revolver-project {
+  background: url(../img/revolver-project-dark.jpg);
+  background-size: cover; }
+
+#bamm-project {
+  background: url(../img/bamm-project-dark.jpg);
   background-size: cover; }
 
 @media (min-width: 800px) {
@@ -596,7 +612,7 @@ footer {
   .work-item {
     position: relative;
     width: 40%;
-    height: 300px;
+    height: 340px;
     display: inline-block;
     margin: 20px; }
     .work-item .work-image {
@@ -636,7 +652,7 @@ footer {
       vertical-align: middle; }
 
   #image-everlane {
-    background: url(../img/everlane-project.jpg); }
+    background: url(../img/everlane-project.gif); }
 
   #image-scoot-networks {
     background: url(../img/scoot-project.jpg); }
@@ -735,4 +751,5 @@ footer {
     background: #fff;
     padding: 0 6px;
     text-align: center;
-    overflow: hidden; } }
+    overflow: hidden;
+    display: block; } }

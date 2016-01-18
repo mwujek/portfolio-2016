@@ -11293,6 +11293,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/bamm-project-dark.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 138514,
+		"inputAbbreviatedPath": "\/img\/bamm-project-dark.jpg",
+		"outputAbbreviatedPath": "\/img\/bamm-project-dark.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/bamm.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -11337,6 +11348,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/everlane-project-dark.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85957,
+		"inputAbbreviatedPath": "\/img\/everlane-project-dark.jpg",
+		"outputAbbreviatedPath": "\/img\/everlane-project-dark.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/everlane-project.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -11344,6 +11366,17 @@
 		"initialSize": 134071,
 		"inputAbbreviatedPath": "\/img\/everlane-project.jpg",
 		"outputAbbreviatedPath": "\/img\/everlane-project.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/everlane-project2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134071,
+		"inputAbbreviatedPath": "\/img\/everlane-project2.jpg",
+		"outputAbbreviatedPath": "\/img\/everlane-project2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -11392,13 +11425,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/scoot-project copy.jpg": {
+	"\/img\/revolver-project-dark.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 107651,
-		"inputAbbreviatedPath": "\/img\/scoot-project copy.jpg",
-		"outputAbbreviatedPath": "\/img\/scoot-project copy.jpg",
+		"initialSize": 65499,
+		"inputAbbreviatedPath": "\/img\/revolver-project-dark.jpg",
+		"outputAbbreviatedPath": "\/img\/revolver-project-dark.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/scoot-project-dark.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63972,
+		"inputAbbreviatedPath": "\/img\/scoot-project-dark.jpg",
+		"outputAbbreviatedPath": "\/img\/scoot-project-dark.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

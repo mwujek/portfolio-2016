@@ -68,6 +68,10 @@ $franklin: 'franklin-gothic-urw', sans-serif;
 $first-break: 800px;
 $mobile-padding: 0 10px;
 
+::-moz-selection { background: #FF8000; }
+::selection { background: #FF8000; }
+
+
 @media (min-width: $first-break) {
   .row { width: 100%; display: table; table-layout: fixed; }
   .col { display: table-cell; }
@@ -516,9 +520,9 @@ h1.section-title{
   //opacity: 0;
 }
 .project-gallery{
-  img{
-    height: 300px;
-  }
+  // img{
+  //   height: 300px;
+  // }
   li.dot{
     background: $blue-200;
   }
@@ -657,9 +661,10 @@ $quote-diameter: 50px;
 
 
 // per project
-#scoot-project{background: url(../img/scoot-project.jpg); background-size: cover;}
-
-
+#scoot-project{background: url(../img/scoot-project-dark.jpg); background-size: cover;}
+#everlane-project{background: url(../img/everlane-project-dark.jpg); background-size: cover;}
+#revolver-project{background: url(../img/revolver-project-dark.jpg); background-size: cover;}
+#bamm-project{background: url(../img/bamm-project-dark.jpg); background-size: cover;}
 // first point break
 @media (min-width: $first-break) {
   
@@ -779,7 +784,7 @@ $quote-diameter: 50px;
 .work-item{
   position: relative;
   width: 40%;
-  height: 300px;
+  height: 340px;
   display: inline-block;
   margin: 20px;
   .work-image{
@@ -828,7 +833,7 @@ $quote-diameter: 50px;
     vertical-align: middle;
   }
 }
-#image-everlane{ background: url(../img/everlane-project.jpg);}
+#image-everlane{ background: url(../img/everlane-project.gif);}
 #image-scoot-networks{ background: url(../img/scoot-project.jpg);}
 #image-revolver-yoga{
   .col{
@@ -935,6 +940,7 @@ h1.dark-text{
     padding: 0 6px;
     text-align: center;
     overflow: hidden;
+    display: block; // break em down
   }
   
 } // end of media query
