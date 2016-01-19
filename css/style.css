@@ -298,14 +298,14 @@ h1.section-title {
   width: 100%;
   height: 40vh;
   position: relative;
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
   .bio-section .col-2-mobile {
     width: 100%;
     height: 100%;
     vertical-align: middle; }
     .bio-section .col-2-mobile h1 {
       color: #fff;
-      letter-spacing: 1px;
+      font-weight: 100;
       text-align: center;
       font-family: 'verveine';
       font-size: 28px; }
@@ -573,7 +573,7 @@ img.border {
   .video-cell p {
     margin: 0 auto;
     padding: 6px 0 30px 0;
-    font-size: 14px !important; }
+    font-size: 14px; }
 
 .gallery-cell {
   position: relative; }
@@ -644,12 +644,35 @@ span.mobile-tag {
 
 .work-section {
   background: #eee; }
+  .work-section a {
+    text-decoration: none; }
 
 .img-col, .coming-soon {
   display: none; }
 
-.work-item .work-info h1, .work-item .work-info h2 {
-  color: #333; }
+.work-item .work-info {
+  top: 36px; }
+  .work-item .work-info h1, .work-item .work-info h2 {
+    color: #333;
+    font-size: 20px; }
+
+#image-gap {
+  background: url(../img/gap-thumbnail.png); }
+
+#image-everlane {
+  background: url(../img/everlane-thumbnail.jpg); }
+
+#image-scoot-networks {
+  background: url(../img/scoot-thumbnail.jpg); }
+
+#image-revolver-yoga {
+  background: url(../img/revolver-thumbnail.png); }
+
+#image-bamm {
+  background: url(../img/bamm-thumbnail.png); }
+
+#image-graphics-center {
+  background: url(../img/gc-thumbnail.gif); }
 
 @media (min-width: 800px) {
   #scoot-project {
@@ -659,6 +682,10 @@ span.mobile-tag {
   #gc-project {
     background: url(../img/gc-title.png);
     background-size: cover; }
+
+  .video-cell p {
+    font-size: 16px;
+    margin-bottom: 20px; }
 
   div.mobile-nav, nav {
     display: none; }

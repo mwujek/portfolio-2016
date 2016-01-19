@@ -11357,6 +11357,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/bamm-thumbnail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5505,
+		"inputAbbreviatedPath": "\/img\/bamm-thumbnail.png",
+		"outputAbbreviatedPath": "\/img\/bamm-thumbnail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -11423,13 +11434,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/everlane-thumbnail.png": {
+	"\/img\/everlane-thumbnail.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9614,
+		"inputAbbreviatedPath": "\/img\/everlane-thumbnail.jpg",
+		"outputAbbreviatedPath": "\/img\/everlane-thumbnail.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap-thumbnail.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 13407,
-		"inputAbbreviatedPath": "\/img\/everlane-thumbnail.png",
-		"outputAbbreviatedPath": "\/img\/everlane-thumbnail.png",
+		"initialSize": 47149,
+		"inputAbbreviatedPath": "\/img\/gap-thumbnail.png",
+		"outputAbbreviatedPath": "\/img\/gap-thumbnail.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -11555,6 +11577,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/revolver-thumbnail.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51997,
+		"inputAbbreviatedPath": "\/img\/revolver-thumbnail.jpg",
+		"outputAbbreviatedPath": "\/img\/revolver-thumbnail.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/revolver-thumbnail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4858,
+		"inputAbbreviatedPath": "\/img\/revolver-thumbnail.png",
+		"outputAbbreviatedPath": "\/img\/revolver-thumbnail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/scoot-0.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -11595,6 +11639,17 @@
 		"initialSize": 78205,
 		"inputAbbreviatedPath": "\/img\/scoot-project.jpg",
 		"outputAbbreviatedPath": "\/img\/scoot-project.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/scoot-thumbnail.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15149,
+		"inputAbbreviatedPath": "\/img\/scoot-thumbnail.jpg",
+		"outputAbbreviatedPath": "\/img\/scoot-thumbnail.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

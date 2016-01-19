@@ -409,7 +409,7 @@ h1.intro-heading{
   //background-repeat: no-repeat;
   //vertical-align: middle;
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   .col-2-mobile{
     width: 100%;
     height: 100%;
@@ -417,7 +417,7 @@ h1.intro-heading{
 
     h1{
       color:#fff;
-      letter-spacing: 1px;
+      font-weight: 100;
       text-align: center;
       font-family: 'verveine';
       font-size: 28px;
@@ -743,7 +743,7 @@ text-align: center;
   p{
     margin: 0 auto;
     padding: 6px 0 30px 0;
-    font-size: 14px !important;
+    font-size: 14px;
   }
 }
 
@@ -825,16 +825,31 @@ span.mobile-tag{
 // work section round 2
 .work-section{
   background: #eee;
+  a{
+    text-decoration: none;
+  }
 }
 .img-col, .coming-soon{
   display: none;
 }
 
 .work-item .work-info{
+  top: 36px;
   h1,h2{
     color: #333;
+    font-size: 20px;
   }
 }
+
+//thumbnails for mobile view
+
+#image-gap{background: url(../img/gap-thumbnail.png);}
+#image-everlane{background: url(../img/everlane-thumbnail.jpg);}
+#image-scoot-networks{background: url(../img/scoot-thumbnail.jpg);}
+#image-revolver-yoga{background: url(../img/revolver-thumbnail.png);}
+#image-bamm{background: url(../img/bamm-thumbnail.png);}
+#image-graphics-center{background: url(../img/gc-thumbnail.gif);}
+
 
 
 // first point break
@@ -844,7 +859,7 @@ span.mobile-tag{
   // per project
   #scoot-project{background: url(../img/scoot-project-dark.jpg); background-size: cover;}
   #gc-project{background: url(../img/gc-title.png); background-size: cover;}
-
+  .video-cell p{ font-size: 16px; margin-bottom: 20px; }
   div.mobile-nav, nav{display: none;}
   .add-shadow{box-shadow: 1px 1px 5px rgba(0,0,0,0.2) !important; background: rgba(255,255,255,0.9); transition:none !important;}
   .desktop-nav{
