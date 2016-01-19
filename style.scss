@@ -1,30 +1,27 @@
 // import font
 
-//testing google
-@import url(https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,800,900,700,600,500,300);
 
-@font-face {
-  font-family: 'martin gothic medium';
-  src: url('../fonts/martin-gothic-medium.eot');
-  src: url('../fonts/martin-gothic-medium.eot?#iefix') format('embedded-opentype'), 
-  url('../fonts/martin-gothic-medium.woff') format('woff')
-}
 
-@font-face {
-  font-family: 'martin gothic light';
-  src: url('../fonts/martin-gothic-light.eot');
-  src: url('../fonts/martin-gothic-light.eot?#iefix') format('embedded-opentype'), 
-  url('../fonts/martin-gothic-light.woff') format('woff')
-}
+// @font-face {
+//   font-family: 'martin gothic medium';
+//   src: url('../fonts/martin-gothic-medium.eot');
+//   src: url('../fonts/martin-gothic-medium.eot?#iefix') format('embedded-opentype'), 
+//   url('../fonts/martin-gothic-medium.woff') format('woff')
+// }
+
+// @font-face {
+//   font-family: 'martin gothic light';
+//   src: url('../fonts/martin-gothic-light.eot');
+//   src: url('../fonts/martin-gothic-light.eot?#iefix') format('embedded-opentype'), 
+//   url('../fonts/martin-gothic-light.woff') format('woff')
+// }
 
 body {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 400;
-  
   color: #483D3D;
   margin:0px;
   padding:0px;
-  font-family: 'martin gothic medium';
   overflow-x:hidden;
   background: url(../img/bg.jpg);
 
@@ -67,6 +64,19 @@ $franklin: 'franklin-gothic-urw', sans-serif;
 
 $first-break: 800px;
 $mobile-padding: 0 10px;
+
+// typography
+
+.mobile-type-paragraph{
+  font-size: 14px;
+  line-height: 20px;
+}
+.mobile-type-h1{}
+.mobile-type-h2{}
+.mobile-type-h3{
+  font-size: 18px;
+  line-height: 20px;
+}
 
 ::-moz-selection { background: #FF8000; }
 ::selection { background: #FF8000; }
@@ -135,10 +145,10 @@ nav{
     margin: 0;
     margin-left: 10px;
     //letter-spacing: 0.5px;
-    font-size: 24px;
+    font-size: 18px;
     position: relative;
-    top: 3px;
-    font-family: 'martin gothic light';
+    top: 1px;
+    font-family: 'franklin-gothic-urw';
   }
   h2.mobile-hidden{
     display: none;
@@ -170,32 +180,33 @@ div.mobile-nav{
     @extend .reg-list;
     li{
       a{
-        font-family: 'martin gothic light';
+        font-family: 'franklin-gothic-urw';
         padding: 22px 0px 16px 0px;
         padding-left: 40px;
         line-height: 20px;
         display: block;
-        background: $blue-000;
-        border-bottom: 1px solid $blue-200;
+        background: #ddd;
+        border-bottom: 1px solid #aaa;
         font-size: 20px;
       }
     }
   }
 }
 .mobile-nav-left{
-  background: $blue-000;
+  background: #ddd;
 }
 .mobile-nav-right{
-  background: $blue-450;
+  background: #999;
   height: 100%;
   position: relative;
   h1{
-    font-size: 24px;
+    font-size: 20px;
     text-align: right;
     padding-right: 10px;
     //letter-spacing: 1px;
     color: #fff;
-    font-family: 'martin gothic light';
+    font-family: 'franklin-gothic-urw';
+    font-weight: 400;
     margin-bottom: 19px;
     position: relative;
     top: -1px;
@@ -209,10 +220,10 @@ div.mobile-nav{
       margin-bottom: 6px;
       a{
         font-size: 16px;
-        font-family: $franklin;
+        font-family: 'franklin-gothic-urw';
         font-weight: 100;
         text-decoration: underline;
-        color: $blue-300;
+        color: #fff;
       }
     }
   }
@@ -231,7 +242,7 @@ div.mobile-nav{
         margin-right: 10px;
         i{
           font-size: 42px;
-          color: $blue-300;
+          color: #fff;
         }
       }
     }
@@ -264,9 +275,16 @@ div.mobile-nav{
 
 // project section
 
+h1.section-title{
+    font-size: 60px;
+    font-family: 'verveine';
+  }
+
 .content-container{
   max-width: 800px;
   margin: 0 auto;
+  padding-bottom: 30px;
+  overflow-x: hidden;
 }
 
 .project-hero-img{
@@ -279,7 +297,13 @@ div.mobile-nav{
     vertical-align: middle;
     color: #fff;
     display: table-cell;
-    h1{ font-family: 'martin gothic light'}
+    h1{
+      font-family: 'verveine';
+      font-size: 48px;
+      font-weight: 100;
+      margin: 0;
+
+    }
 
   }
 }
@@ -304,12 +328,13 @@ h1.intro-heading{
   margin: 0;
   padding: 10px;
   font-size: 28px;
+  font-weight: 100;
   line-height: 32px;
   width: 100% !important;
-  padding: 0 20px;
+  padding: 0 10px;
   box-sizing: border-box;
   color: #000;
-  font-family: 'martin gothic light';
+  font-family: 'verveine';
     //font-family: 'kremlin-pro-web-expanded'
     position: absolute;
     //letter-spacing: 0.5px;
@@ -394,7 +419,7 @@ h1.intro-heading{
       color:#fff;
       letter-spacing: 1px;
       text-align: center;
-      font-family: 'martin gothic light';
+      font-family: 'verveine';
       font-size: 28px;
     }
   }
@@ -432,7 +457,7 @@ h1.intro-heading{
 // contact buttons
 .contact-btn-wrapper{
   padding-top: 10px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   ul{
     @extend .reg-list;
     text-align: center;
@@ -474,22 +499,22 @@ h1.intro-heading{
 
 .back-to-projects{
   //border:1px solid $blue-200;
-  background: $blue-100;
+  background: #ccc;
   padding: 4px 10px 4px 1px;
   border-radius: 4px;
   position: absolute;
   right: 10px;
-  top:0px;
+  top:-2px;
   a{
     text-decoration: none;
-    color: $blue-400;
+    color: #333;
     position: relative;
     top:0px;
     font-family: 'franklin-gothic-urw';
     font-size: 15px;
     font-weight: 400;
     &:visited{
-      color: $blue-400;
+      color: #333;
     }
     i{
       margin-right: 6px;
@@ -514,13 +539,15 @@ h1.intro-heading{
     padding: $mobile-padding;
     color: $blue-500;
     font-weight: 200;
-    font-size: 18px;
-    line-height: 26px;
+    //font-size: 18px;
+    //line-height: 26px;
+    @extend .mobile-type-paragraph;
 
+ 
   }
   h3{
-    font-family: 'martin gothic light';
-    font-size: 30px;
+    font-family: 'franklin-gothic-urw';
+    @extend .mobile-type-h3;
     padding: $mobile-padding;
     margin: 0px 0px -6px 0px;
     text-align: center;
@@ -688,11 +715,11 @@ $quote-diameter: 50px;
 
 
 // per project
-#scoot-project{background: url(../img/scoot-project-dark.jpg); background-size: cover;}
+#scoot-project{background: url(../img/scoot-project-dark-mobile.jpg); background-size: cover;}
 #everlane-project{background: url(../img/everlane-project-dark.jpg); background-size: cover;}
 #revolver-project{background: url(../img/revolver-project-dark.jpg); background-size: cover;}
 #bamm-project{background: url(../img/bamm-project-dark.jpg); background-size: cover;}
-#gc-project{background: url(../img/gc-title.png); background-size: cover;}
+#gc-project{background: url(../img/gc-title-mobile.png); background-size: cover;}
 
 
 .online-demo-container{
@@ -716,6 +743,7 @@ text-align: center;
   p{
     margin: 0 auto;
     padding: 6px 0 30px 0;
+    font-size: 14px !important;
   }
 }
 
@@ -736,7 +764,7 @@ span.mobile-tag{
   display: block;
   text-align: center;
   font-family: 'franklin-gothic-urw';
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -746,8 +774,9 @@ span.mobile-tag{
   border: 1px solid #ccc;
   padding: 6px 12px;
   position: absolute;
-  bottom: 10px;
-  right: -10px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 2px;
   font-family: 'franklin-gothic-urw';
   font-weight: 400;
   font-size: 12px;
@@ -792,8 +821,29 @@ span.mobile-tag{
   }
 }
 
+
+// work section round 2
+.work-section{
+  background: #eee;
+}
+.img-col, .coming-soon{
+  display: none;
+}
+
+.work-item .work-info{
+  h1,h2{
+    color: #333;
+  }
+}
+
+
 // first point break
 @media (min-width: $first-break) {
+
+
+  // per project
+  #scoot-project{background: url(../img/scoot-project-dark.jpg); background-size: cover;}
+  #gc-project{background: url(../img/gc-title.png); background-size: cover;}
 
   div.mobile-nav, nav{display: none;}
   .add-shadow{box-shadow: 1px 1px 5px rgba(0,0,0,0.2) !important; background: rgba(255,255,255,0.9); transition:none !important;}
@@ -814,7 +864,7 @@ span.mobile-tag{
       margin: 0;
       line-height: 16px;
       margin-bottom: 10px;
-      font-size: 22px;
+      font-size: 18px;
 
     }
     h2{
@@ -893,7 +943,8 @@ span.mobile-tag{
     }
   }
   h1.section-title{
-    font-size: 48px;
+    font-size: 60px;
+    font-family: 'verveine';
   }
   .bio-section{
     .col-2-mobile{
@@ -903,14 +954,47 @@ span.mobile-tag{
 
 
 // work section
+.work-content{
+  p{
+    font-family: 'franklin-gothic-urw';
+    padding: $mobile-padding;
+    color: $blue-500;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 26px;
+
+  }
+  h3{
+    font-family: 'franklin-gothic-urw';
+    font-size: 24px;
+    font-weight: 500;
+    padding: $mobile-padding;
+    margin: 0px 0px -6px 0px;
+    text-align: center;
+
+  }
+
+}
+
+span.mobile-tag{
+  font-size: 16px;
+}
+
+.video-cell{
+  p{ font-size: 16px;}
+}
  
 // gap coming soon
+.img-col{
+  display: table-cell;
+}
 .coming-soon{
  background: rgba(0,0,0,0.5);
  z-index: 100000;
  width: 100%;
  height: 100%;
  position: absolute;
+ display: table;
  &:hover{
   cursor: not-allowed;
  }
@@ -925,16 +1009,17 @@ span.mobile-tag{
  } 
 }
 #work{
-  top: -70px;
+  top: -80px;
 }
 .work-section{
+  background: #ddd;
 }
 .work-item{
   position: relative;
-  width: 40%;
+  width: 38%;
   height: 340px;
   display: inline-block;
-  margin: 20px;
+  margin: 10px;
   .work-image{
     width: 100%;
     height: 100%;
