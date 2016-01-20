@@ -15,8 +15,8 @@ var setIntroType = function (){
 	intro.css({
 		'top': ((screenH - introH) / 2) + 'px',
 		'left': ((screenW - introW) / 2) + 'px'
-	})
-}
+	});
+};
 
 // INDEX ONLY
 // set bio surf image HEIGHT
@@ -24,7 +24,7 @@ var setBioPic = function(){
 	var pic = $('.bio-section');
 	var screenW = $(window).width();
 	pic.css('height', screenW * 0.6 + 'px');
-}
+};
 
 // all pages
 // smooth scroll
@@ -41,7 +41,7 @@ var smoothScroll= function(){
       }
     }
   });
-}
+};
 
 
 // on load
@@ -66,14 +66,12 @@ $(document).ready(function() {
   });
 
 //hide desktop & work
-var widthThreshold = 1300;
 var shadowThreshold = 1130;
 
 
 // PROJECTS ONLY
 // project nav only FUNCTION
 var placeProjectNav = function(){
-  var href = window.location.pathname;
   var nav = $('.desktop-nav');
   var screenWidth = $(window).width();
 
@@ -86,11 +84,10 @@ var placeProjectNav = function(){
     }
   // set left if it's a big screen
   if ( screenWidth > shadowThreshold){
-    var contentW = $('.content-container').width();
     var navOffset = ((screenWidth - shadowThreshold) / 2);
     nav.css('left', navOffset + 'px');
   }
-}
+};
 
 
 var workSection = $('#work');
@@ -167,7 +164,7 @@ var globalFunction = function() {
     }
     placeProjectNav();
   }); // end of resize
-}
+};
 
 
 
@@ -186,7 +183,7 @@ if(href === '/' || href === '/index.html' || href === '/portfolio-2016/' || href
 if(href === '/' || href === '/index.html' || href === '/portfolio-2016/' || href === '/portfolio-2016/index.html'){
 	
 //waypoints ... get to work
-var canvas = $('.canvas-container')
+var canvas = $('.canvas-container');
 $('#work').waypoint({
 	offset: '50%',
 	handler: function(direction) {
