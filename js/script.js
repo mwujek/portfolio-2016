@@ -1,5 +1,8 @@
 /*jshint devel:true */
 
+
+// INDEX ONLY
+// Set intro text in the middle
 var setIntroType = function (){
 	var intro = $('.canvas-container h1');
 	var introH = intro.height();
@@ -14,11 +17,17 @@ var setIntroType = function (){
 		'left': ((screenW - introW) / 2) + 'px'
 	})
 }
+
+// INDEX ONLY
+// set bio surf image HEIGHT
 var setBioPic = function(){
 	var pic = $('.bio-section');
 	var screenW = $(window).width();
 	pic.css('height', screenW * 0.6 + 'px');
 }
+
+// all pages
+// smooth scroll
 var smoothScroll= function(){
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -32,8 +41,10 @@ var smoothScroll= function(){
       }
     }
   });
-
 }
+
+
+// on load
 $(window).load(function() {
 	// set type
 	setIntroType();
@@ -41,7 +52,7 @@ $(window).load(function() {
 	smoothScroll();
 });
 
-
+// on ready
 $(document).ready(function() {
 
   var menuBtn = $('.menu-icon');
@@ -57,36 +68,38 @@ $(document).ready(function() {
 //hide desktop & work
 var widthThreshold = 1300;
 var shadowThreshold = 1130;
+
+
+// PROJECTS ONLY
+// project nav only FUNCTION
 var placeProjectNav = function(){
   var href = window.location.pathname;
-  console.log("href:" + href);
-  if (href !== '/index.html' || '/' ){
-    var nav = $('.desktop-nav');
-    var screenWidth = $(window).width();
-  //console.log(screenWidth);
-  if ( screenWidth > shadowThreshold){
-    nav.removeClass('add-shadow');
-  } else {
-    nav.addClass('add-shadow');
-    nav.css('left', '0px');
+  var nav = $('.desktop-nav');
+  var screenWidth = $(window).width();
 
-  }
+  // ADD shadow or not
+    if ( screenWidth > shadowThreshold){
+      nav.removeClass('add-shadow');
+    } else {
+      nav.addClass('add-shadow');
+      nav.css('left', '0px');
+    }
+  // set left if it's a big screen
   if ( screenWidth > shadowThreshold){
-
     var contentW = $('.content-container').width();
     var navOffset = ((screenWidth - shadowThreshold) / 2);
-    console.log(navOffset)
     nav.css('left', navOffset + 'px');
-
   }
 }
 
-}
+
 var workSection = $('#work');
 var desktopNav = $('.desktop-nav');
 var href = window.location.pathname;
-//console.log('href is: ' + href);
-if(href === '/'){ //|| href !== '/p16/everlane.html'){
+// NAVIGATION TOGGLE HERE...
+console.log('href is: ' + href);
+
+if(href === '/' || href === '/index.html' || href === '/portfolio-2016/' || href === '/portfolio-2016/index.html'){
   desktopNav.toggleClass('hide-desktop-nav');
 } else {
   placeProjectNav();
@@ -100,6 +113,7 @@ if(href === '/'){ //|| href !== '/p16/everlane.html'){
 var globalFunction = function() {
   //var windowW = $(window).width();
   var breakPoint = 800;
+  console.log('inside globalFunction');
 
   function toggleFlicker() {
     if (flickityActive) {
@@ -158,15 +172,18 @@ var globalFunction = function() {
 
 
 
-// everlane
-href = window.location.pathname;
-if(href !== '/'){
-	globalFunction();
-	//alert("Hello! I am an alert box!! " +  $(window).width());
+// set all flickity slides and resize functions for project nav and toggleFlicker
+//if(href !== '/' || href !== '/index.html' || href !== 'portfolio-2016/' || href !== 'portfolio-2016/index.html'){
+if(href === '/' || href === '/index.html' || href === '/portfolio-2016/' || href === '/portfolio-2016/index.html'){
+	console.log('on the home page (not running globalFunction');
+} else {
+  globalFunction();
 }
 
 
-if(href !== '/everlane.html'){
+
+// set waypoints
+if(href === '/' || href === '/index.html' || href === '/portfolio-2016/' || href === '/portfolio-2016/index.html'){
 	
 //waypoints ... get to work
 var canvas = $('.canvas-container')
@@ -179,7 +196,6 @@ $('#work').waypoint({
 		}
 		if (direction === 'up' && desktopNav.not('.hide-desktop-nav') ){
 			desktopNav.toggleClass('hide-desktop-nav');
-			console.log('not class');
 		}
 	}
 });
@@ -192,7 +208,6 @@ canvas.waypoint({
 		}
 		if (direction === 'up' && workSection.not('.hide-work-title') ){
 			workSection.toggleClass('hide-work-title');
-			console.log('not class');
 		}
 	}
 });
