@@ -11273,11 +11273,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/gap.html": {
+	"\/gap-pete.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/gap.html",
+		"inputAbbreviatedPath": "\/gap-pete.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -11452,6 +11452,138 @@
 		"initialSize": 47149,
 		"inputAbbreviatedPath": "\/img\/gap-thumbnail.png",
 		"outputAbbreviatedPath": "\/img\/gap-thumbnail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/clip-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 224710,
+		"inputAbbreviatedPath": "\/img\/gap\/clip-1.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/clip-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/clip-10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 283757,
+		"inputAbbreviatedPath": "\/img\/gap\/clip-10.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/clip-10.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/clip-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303341,
+		"inputAbbreviatedPath": "\/img\/gap\/clip-5.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/clip-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/clip-6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 236194,
+		"inputAbbreviatedPath": "\/img\/gap\/clip-6.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/clip-6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/clip-7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 277696,
+		"inputAbbreviatedPath": "\/img\/gap\/clip-7.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/clip-7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/clip-8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 251829,
+		"inputAbbreviatedPath": "\/img\/gap\/clip-8.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/clip-8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/ga-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 81758,
+		"inputAbbreviatedPath": "\/img\/gap\/ga-1.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/ga-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/ga-1old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 296290,
+		"inputAbbreviatedPath": "\/img\/gap\/ga-1old.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/ga-1old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/ga-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180373,
+		"inputAbbreviatedPath": "\/img\/gap\/ga-5.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/ga-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/gap-project-title.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 225452,
+		"inputAbbreviatedPath": "\/img\/gap\/gap-project-title.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/gap-project-title.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/pete-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 168673,
+		"inputAbbreviatedPath": "\/img\/gap\/pete-1.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/pete-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gap\/sg-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 245854,
+		"inputAbbreviatedPath": "\/img\/gap\/sg-1.jpg",
+		"outputAbbreviatedPath": "\/img\/gap\/sg-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
