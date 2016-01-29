@@ -1,0 +1,39 @@
+$blue-black: #003F74;
+$blue-500: #00559D;
+$blue-400: #0086D4;
+$blue-300: #00A7F7;
+$blue-200: #7DD3FC;
+$blue-100: #B1E5FD;
+$blue-000: #E0F5FF;
+
+$green-black: #033F24;
+$green-500: #025932;
+$green-400: #01834B;
+$green-300: #00AD63;
+$green-200: #4CC27D;
+$green-100: #92D6AE;
+$green-000: #C5E3D2;
+
+$orange-black: #7B2B00;
+$orange-500:#B64000;
+$orange-400:#DC6300;
+$orange-300:#F77C00;
+$orange-200:#FF9901;
+$orange-100:#FFCD7A;
+$orange-000: #FFF3DF;
+
+$red-black: #8B0600;
+$red-500: #B2130C;
+$red-400: #D52C28;
+$red-300: #F7402D;
+$red-200: #E77271;
+$red-100: #F19999;
+$red-000: #FFEBEE;
+
+$grey-black: #222;
+$grey-500: #333131;
+$grey-400: #595757; 
+$grey-300: #7E7D7C;
+$grey-200: #A4A3A2;
+$grey-100: #C9C9C7;
+$grey-000: #EFEFED;

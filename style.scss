@@ -277,7 +277,7 @@ div.mobile-nav{
 
 h1.section-title{
     font-size: 60px;
-    font-family: 'verveine';
+    font-family: 'kulturista-web';
   }
 
 .content-container{
@@ -298,10 +298,11 @@ h1.section-title{
     color: #fff;
     display: table-cell;
     h1{
-      font-family: 'verveine';
-      font-size: 48px;
-      font-weight: 100;
+      font-family: 'kulturista-web';
+      font-size: 36px;
+      font-weight: 500;
       margin: 0;
+      margin-bottom: 10px;
 
     }
 
@@ -334,7 +335,7 @@ h1.intro-heading{
   padding: 0 10px;
   box-sizing: border-box;
   color: #000;
-  font-family: 'verveine';
+  font-family: 'kulturista-web';
     //font-family: 'kremlin-pro-web-expanded'
     position: absolute;
     //letter-spacing: 0.5px;
@@ -419,7 +420,7 @@ h1.intro-heading{
       color:#fff;
       font-weight: 100;
       text-align: center;
-      font-family: 'verveine';
+      font-family: 'kulturista-web';
       font-size: 28px;
     }
   }
@@ -546,7 +547,7 @@ h1.intro-heading{
  
   }
   h3{
-    font-family: 'franklin-gothic-urw';
+    font-family: 'kulturista-web';
     @extend .mobile-type-h3;
     padding: $mobile-padding;
     margin: 0px 0px -6px 0px;
@@ -882,6 +883,8 @@ span.mobile-tag{
       line-height: 16px;
       margin-bottom: 10px;
       font-size: 18px;
+      font-weight: 400;
+      font-family: 'kulturista-web';
 
     }
     h2{
@@ -948,24 +951,25 @@ span.mobile-tag{
   .canvas-container{
     position: relative;
     height: 100vh;
-    h1{
+    h1.intro-heading{
       position: absolute;
-      max-width: 66%;
+      max-width: 74%;
       left: 0px;
       top:189px;
       margin: 0 auto;
-      font-size: 54px;
-      line-height: 60px;
+      font-size: 44px;
+      line-height: 54px;
+      font-weight: 300;
       color: #000;
     }
   }
   h1.section-title{
-    font-size: 60px;
-    font-family: 'verveine';
+    font-size: 50px;
+    font-family: 'kulturista-web';
   }
   .bio-section{
     .col-2-mobile{
-      h1{font-size: 60px;}
+      h1{font-size: 60px; font-weight: 600; letter-spacing: 0.5px;}
     }
   }
 
@@ -982,9 +986,9 @@ span.mobile-tag{
 
   }
   h3{
-    font-family: 'franklin-gothic-urw';
+    font-family: 'kulturista-web';
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     padding: $mobile-padding;
     margin: 0px 0px -6px 0px;
     text-align: center;
@@ -1029,7 +1033,7 @@ span.mobile-tag{
   top: -80px;
 }
 .work-section{
-  background: #ddd;
+  background: #fff;
 }
 .work-item{
   position: relative;
@@ -1054,8 +1058,8 @@ span.mobile-tag{
     h1,h2{
       margin: 0;
       text-align: right;
-      font-family: $franklin;
-      font-size: 22px;
+      font-family: 'kulturista-web';
+      font-size: 24px;
       color: #fff;
 
 
@@ -1065,7 +1069,9 @@ span.mobile-tag{
       letter-spacing: 0.5px;
     }
     h2{
-      font-weight: 100;
+      font-size: 18px;
+      font-weight: 300;
+      //font-family: 'franklin-gothic-urw';
     }
 
   }
